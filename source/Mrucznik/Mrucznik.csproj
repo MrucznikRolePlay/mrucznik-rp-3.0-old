@@ -99,6 +99,7 @@
     <Compile Include="mru_konta.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="src\Controllers\PlayerController.cs" />
     <Compile Include="src\GameMode.cs" />
     <Compile Include="src\Player.cs" />
     <Compile Include="src\ProgressBar.cs" />

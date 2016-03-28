@@ -1,4 +1,6 @@
 ﻿using System;
+using SampSharp.GameMode.Events;
+using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.World;
 
 namespace Mrucznik
@@ -17,6 +19,13 @@ namespace Mrucznik
 
             SendClientMessage("Welcome to {88AA88}M{FFFFFF}rucznik {88AA88}R{FFFFFF}ole{88AA88}P{FFFFFF}lay");
             GameText("~w~Mrucznik Role Play", 4000, 4);
+        }
+
+        public override void OnSpawned(SpawnEventArgs e)
+        {
+            base.OnSpawned(e);
+
+            SendClientMessage(Color.AliceBlue, "Elo");
         }
     }
 }

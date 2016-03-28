@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
+using Mrucznik.Controllers;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Controllers;
 using SampSharp.GameMode.Definitions;
@@ -33,7 +34,7 @@ namespace Mrucznik
             Console.WriteLine("\n");
 
             //Ustawienia SAMP'a
-            SetGameModeText("Mrucznik-RP " + Assembly.GetExecutingAssembly().GetName().Version);
+            SetGameModeText("Mrucznik-RP " + Assembly.GetExecutingAssembly().GetName().Version + "-alpha");
             AllowInteriorWeapons(true);
             ShowPlayerMarkers(PlayerMarkersMode.Off);
             DisableInteriorEnterExits();
@@ -59,14 +60,23 @@ namespace Mrucznik
         {
             base.LoadControllers(controllers); //first
 
+            controllers.Remove<GtaPlayerController>();
+            controllers.Add(new PlayerController());
+
             Streamer.Load(this, controllers);
         }
 
+        #region Events (Callback's)
+        
+        #endregion
+
+        #region Commands
         [Command("kill")]
         public static void KillMe(GtaPlayer player)
         {
             player.Health = 0.0f;
         }
+        #endregion
 
         #endregion
     }
