@@ -271,12 +271,13 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# -------------------------------------------------- MOJE --------------------------------------------------
 #---< My Excludes >---
 #Server files and plugins
-*.exe
-*.dll
-*.so
-*.pdb
+#*.exe
+#*.dll
+#*.so
+#*.pdb
 
 #AMX file format
 *.amx
@@ -285,8 +286,6 @@ $RECYCLE.BIN/
 *.log
 /*.txt
 
-
-# -------------------------------------------------- MOJE --------------------------------------------------
 #Floder ignore
 environment/mono/**
 source/Mrucznik/packages/**
