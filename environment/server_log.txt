@@ -1,0 +1,1028 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:42:37] password = ""  (string)
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] Server Plugins
+[03/03/2016 13:42:37] --------------
+[03/03/2016 13:42:37]  Loading plugin: SampSharp
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] SampSharp Plugin
+[03/03/2016 13:42:37] ----------------
+[03/03/2016 13:42:37] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37]   Loaded.
+[03/03/2016 13:42:37]  Loading plugin: streamer
+[03/03/2016 13:42:37] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 13:42:37]   Loaded.
+[03/03/2016 13:42:37]  Loaded 2 plugins.
+
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] Filterscripts
+[03/03/2016 13:42:37] ---------------
+[03/03/2016 13:42:37]   Loading filterscript 'empty.amx'...
+[03/03/2016 13:42:37]   Loaded 1 filterscripts.
+
+[03/03/2016 13:42:37]   Filterscript 'empty.amx' load failed.
+[03/03/2016 13:42:37] Symbol file generation
+[03/03/2016 13:42:37] ----------------------
+[03/03/2016 13:42:37] Converting: Mrucznik.dll
+[03/03/2016 13:42:37]   Converted.
+[03/03/2016 13:42:37]  Converted 1 files.
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] Gamemode
+[03/03/2016 13:42:37] ---------------
+[03/03/2016 13:42:37] Loading gamemode: Mrucznik:GameMode
+[03/03/2016 13:42:37]   Loaded.
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] ----------------------------------
+[03/03/2016 13:42:37] M | --- Mrucznik Role Play --- | M
+[03/03/2016 13:42:37] R | ---        ****        --- | R
+[03/03/2016 13:42:37] U | ---        v3.0        --- | U
+[03/03/2016 13:42:37] C | ---        ****        --- | C
+[03/03/2016 13:42:37] Z | ---    by Mrucznik     --- | Z
+[03/03/2016 13:42:37] N | ---                    --- | N
+[03/03/2016 13:42:37] I | ---       /\_/\        --- | I
+[03/03/2016 13:42:37] K | ---   ===( *.* )===    --- | K
+[03/03/2016 13:42:37]   | ---       \_^_/        --- |  
+[03/03/2016 13:42:37] R | ---         |          --- | R
+[03/03/2016 13:42:37] P | ---         O          --- | P
+[03/03/2016 13:42:37] ----------------------------------
+[03/03/2016 13:42:37] Wersja: 3.0.0.24646
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] 
+[03/03/2016 13:42:37] Number of vehicle models: 0
+[03/03/2016 13:42:37] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/03/2016 13:42:37] Loaded 1 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:44:02] password = ""  (string)
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] Server Plugins
+[03/03/2016 13:44:02] --------------
+[03/03/2016 13:44:02]  Loading plugin: SampSharp
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] SampSharp Plugin
+[03/03/2016 13:44:02] ----------------
+[03/03/2016 13:44:02] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02]   Loaded.
+[03/03/2016 13:44:02]  Loading plugin: streamer
+[03/03/2016 13:44:02] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 13:44:02]   Loaded.
+[03/03/2016 13:44:02]  Loaded 2 plugins.
+
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] Filterscripts
+[03/03/2016 13:44:02] ---------------
+[03/03/2016 13:44:02]   Loading filterscript 'empty.amx'...
+[03/03/2016 13:44:02]   Loaded 1 filterscripts.
+
+[03/03/2016 13:44:02]   Filterscript 'empty.amx' load failed.
+[03/03/2016 13:44:02] Symbol file generation
+[03/03/2016 13:44:02] ----------------------
+[03/03/2016 13:44:02] Converting: Mrucznik.dll
+[03/03/2016 13:44:02]   Converted.
+[03/03/2016 13:44:02]  Converted 1 files.
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] Gamemode
+[03/03/2016 13:44:02] ---------------
+[03/03/2016 13:44:02] Loading gamemode: Mrucznik:GameMode
+[03/03/2016 13:44:02]   Loaded.
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] ----------------------------------
+[03/03/2016 13:44:02] M | --- Mrucznik Role Play --- | M
+[03/03/2016 13:44:02] R | ---        ****        --- | R
+[03/03/2016 13:44:02] U | ---        v3.0        --- | U
+[03/03/2016 13:44:02] C | ---        ****        --- | C
+[03/03/2016 13:44:02] Z | ---    by Mrucznik     --- | Z
+[03/03/2016 13:44:02] N | ---                    --- | N
+[03/03/2016 13:44:02] I | ---       /\_/\        --- | I
+[03/03/2016 13:44:02] K | ---   ===( *.* )===    --- | K
+[03/03/2016 13:44:02]   | ---       \_^_/        --- |  
+[03/03/2016 13:44:02] R | ---         |          --- | R
+[03/03/2016 13:44:02] P | ---         O          --- | P
+[03/03/2016 13:44:02] ----------------------------------
+[03/03/2016 13:44:02] Wersja: 3.0.0.24646
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] 
+[03/03/2016 13:44:02] Number of vehicle models: 0
+[03/03/2016 13:44:02] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/03/2016 13:44:02] Loaded 1 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:59:23] password = ""  (string)
+[03/03/2016 13:59:23] 
+[03/03/2016 13:59:23] Server Plugins
+[03/03/2016 13:59:23] --------------
+[03/03/2016 13:59:23]  Loading plugin: SampSharp
+[03/03/2016 13:59:23] 
+[03/03/2016 13:59:23] SampSharp Plugin
+[03/03/2016 13:59:23] ----------------
+[03/03/2016 13:59:23] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 13:59:23] 
+[03/03/2016 13:59:23]   Loaded.
+[03/03/2016 13:59:23]  Loading plugin: streamer
+[03/03/2016 13:59:23] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 13:59:23]   Loaded.
+[03/03/2016 13:59:23]  Loaded 2 plugins.
+
+[03/03/2016 13:59:23] 
+[03/03/2016 13:59:23] Filterscripts
+[03/03/2016 13:59:23] ---------------
+[03/03/2016 13:59:23]   Loading filterscript 'empty.amx'...
+[03/03/2016 13:59:23]   Loaded 1 filterscripts.
+
+[03/03/2016 13:59:23]   Filterscript 'empty.amx' load failed.
+[03/03/2016 13:59:23] Gamemode
+[03/03/2016 13:59:23] ---------------
+[03/03/2016 13:59:23] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 13:59:23] ERROR: library does not exist!
+[03/03/2016 13:59:23]   Failed.
+[03/03/2016 13:59:23] 
+[03/03/2016 13:59:23] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[13:59:54] password = ""  (string)
+[03/03/2016 13:59:54] 
+[03/03/2016 13:59:54] Server Plugins
+[03/03/2016 13:59:54] --------------
+[03/03/2016 13:59:54]  Loading plugin: SampSharp
+[03/03/2016 13:59:54] 
+[03/03/2016 13:59:54] SampSharp Plugin
+[03/03/2016 13:59:54] ----------------
+[03/03/2016 13:59:54] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 13:59:54] 
+[03/03/2016 13:59:54]   Loaded.
+[03/03/2016 13:59:54]  Loading plugin: streamer
+[03/03/2016 13:59:54] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 13:59:54]   Loaded.
+[03/03/2016 13:59:54]  Loaded 2 plugins.
+
+[03/03/2016 13:59:54] 
+[03/03/2016 13:59:54] Filterscripts
+[03/03/2016 13:59:54] ---------------
+[03/03/2016 13:59:54]   Loading filterscript 'empty.amx'...
+[03/03/2016 13:59:54]   Loaded 1 filterscripts.
+
+[03/03/2016 13:59:54]   Filterscript 'empty.amx' load failed.
+[03/03/2016 13:59:54] Gamemode
+[03/03/2016 13:59:54] ---------------
+[03/03/2016 13:59:54] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 13:59:54] ERROR: library does not exist!
+[03/03/2016 13:59:54]   Failed.
+[03/03/2016 13:59:54] 
+[03/03/2016 13:59:54] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:00:06] password = ""  (string)
+[03/03/2016 14:00:06] 
+[03/03/2016 14:00:06] Server Plugins
+[03/03/2016 14:00:06] --------------
+[03/03/2016 14:00:06]  Loading plugin: SampSharp
+[03/03/2016 14:00:06] 
+[03/03/2016 14:00:06] SampSharp Plugin
+[03/03/2016 14:00:06] ----------------
+[03/03/2016 14:00:06] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:00:06] 
+[03/03/2016 14:00:06]   Loaded.
+[03/03/2016 14:00:06]  Loading plugin: streamer
+[03/03/2016 14:00:06] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:00:06]   Loaded.
+[03/03/2016 14:00:06]  Loaded 2 plugins.
+
+[03/03/2016 14:00:06] 
+[03/03/2016 14:00:06] Filterscripts
+[03/03/2016 14:00:06] ---------------
+[03/03/2016 14:00:06]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:00:06]   Loaded 1 filterscripts.
+
+[03/03/2016 14:00:06]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:00:06] Gamemode
+[03/03/2016 14:00:06] ---------------
+[03/03/2016 14:00:06] Loading gamemode: Grandlarc:Grandlarc
+[03/03/2016 14:00:06] ERROR: library does not exist!
+[03/03/2016 14:00:06]   Failed.
+[03/03/2016 14:00:06] 
+[03/03/2016 14:00:06] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:00:38] password = ""  (string)
+[03/03/2016 14:00:38] 
+[03/03/2016 14:00:38] Server Plugins
+[03/03/2016 14:00:38] --------------
+[03/03/2016 14:00:38]  Loading plugin: SampSharp
+[03/03/2016 14:00:38] 
+[03/03/2016 14:00:38] SampSharp Plugin
+[03/03/2016 14:00:38] ----------------
+[03/03/2016 14:00:38] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:00:38] 
+[03/03/2016 14:00:38]   Loaded.
+[03/03/2016 14:00:38]  Loading plugin: streamer
+[03/03/2016 14:00:38] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:00:38]   Loaded.
+[03/03/2016 14:00:38]  Loaded 2 plugins.
+
+[03/03/2016 14:00:38] 
+[03/03/2016 14:00:38] Filterscripts
+[03/03/2016 14:00:38] ---------------
+[03/03/2016 14:00:38]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:00:38]   Loaded 1 filterscripts.
+
+[03/03/2016 14:00:38]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:00:38] Gamemode
+[03/03/2016 14:00:38] ---------------
+[03/03/2016 14:00:38] Loading gamemode: Grandlarc:Grandlarc
+[03/03/2016 14:00:38] ERROR: library does not exist!
+[03/03/2016 14:00:38]   Failed.
+[03/03/2016 14:00:38] 
+[03/03/2016 14:00:38] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:01:16] password = ""  (string)
+[03/03/2016 14:01:16] 
+[03/03/2016 14:01:16] Server Plugins
+[03/03/2016 14:01:16] --------------
+[03/03/2016 14:01:16]  Loading plugin: SampSharp
+[03/03/2016 14:01:16] 
+[03/03/2016 14:01:16] SampSharp Plugin
+[03/03/2016 14:01:16] ----------------
+[03/03/2016 14:01:16] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:01:16] 
+[03/03/2016 14:01:16]   Loaded.
+[03/03/2016 14:01:16]  Loading plugin: streamer
+[03/03/2016 14:01:16] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:01:16]   Loaded.
+[03/03/2016 14:01:16]  Loaded 2 plugins.
+
+[03/03/2016 14:01:16] 
+[03/03/2016 14:01:16] Filterscripts
+[03/03/2016 14:01:16] ---------------
+[03/03/2016 14:01:16]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:01:16]   Loaded 1 filterscripts.
+
+[03/03/2016 14:01:16]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:01:16] Gamemode
+[03/03/2016 14:01:16] ---------------
+[03/03/2016 14:01:16] Loading gamemode: Grandlarc:Grandlarc
+[03/03/2016 14:01:16] ERROR: library does not exist!
+[03/03/2016 14:01:16]   Failed.
+[03/03/2016 14:01:16] 
+[03/03/2016 14:01:16] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:01:25] password = ""  (string)
+[03/03/2016 14:01:25] 
+[03/03/2016 14:01:25] Server Plugins
+[03/03/2016 14:01:25] --------------
+[03/03/2016 14:01:25]  Loading plugin: SampSharp
+[03/03/2016 14:01:25] 
+[03/03/2016 14:01:25] SampSharp Plugin
+[03/03/2016 14:01:25] ----------------
+[03/03/2016 14:01:25] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:01:25] 
+[03/03/2016 14:01:25]   Loaded.
+[03/03/2016 14:01:25]  Loading plugin: streamer
+[03/03/2016 14:01:25] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:01:25]   Loaded.
+[03/03/2016 14:01:25]  Loaded 2 plugins.
+
+[03/03/2016 14:01:25] 
+[03/03/2016 14:01:25] Filterscripts
+[03/03/2016 14:01:25] ---------------
+[03/03/2016 14:01:25]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:01:25]   Loaded 1 filterscripts.
+
+[03/03/2016 14:01:25]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:01:25] Gamemode
+[03/03/2016 14:01:25] ---------------
+[03/03/2016 14:01:25] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 14:01:25] ERROR: library does not exist!
+[03/03/2016 14:01:25]   Failed.
+[03/03/2016 14:01:25] 
+[03/03/2016 14:01:25] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:01:33] password = ""  (string)
+[03/03/2016 14:01:33] 
+[03/03/2016 14:01:33] Server Plugins
+[03/03/2016 14:01:33] --------------
+[03/03/2016 14:01:33]  Loading plugin: SampSharp
+[03/03/2016 14:01:34] 
+[03/03/2016 14:01:34] SampSharp Plugin
+[03/03/2016 14:01:34] ----------------
+[03/03/2016 14:01:34] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:01:34] 
+[03/03/2016 14:01:34]   Loaded.
+[03/03/2016 14:01:34]  Loading plugin: streamer
+[03/03/2016 14:01:34] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:01:34]   Loaded.
+[03/03/2016 14:01:34]  Loaded 2 plugins.
+
+[03/03/2016 14:01:34] 
+[03/03/2016 14:01:34] Filterscripts
+[03/03/2016 14:01:34] ---------------
+[03/03/2016 14:01:34]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:01:34]   Loaded 1 filterscripts.
+
+[03/03/2016 14:01:34]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:01:34] Gamemode
+[03/03/2016 14:01:34] ---------------
+[03/03/2016 14:01:34] Loading gamemode: grandlarc/Grandlarc:GameMode
+[03/03/2016 14:01:34] ERROR: library does not exist!
+[03/03/2016 14:01:34]   Failed.
+[03/03/2016 14:01:34] 
+[03/03/2016 14:01:34] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:02:42] password = ""  (string)
+[03/03/2016 14:02:42] 
+[03/03/2016 14:02:42] Server Plugins
+[03/03/2016 14:02:42] --------------
+[03/03/2016 14:02:42]  Loading plugin: SampSharp
+[03/03/2016 14:02:42] 
+[03/03/2016 14:02:42] SampSharp Plugin
+[03/03/2016 14:02:42] ----------------
+[03/03/2016 14:02:42] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:02:42] 
+[03/03/2016 14:02:42]   Loaded.
+[03/03/2016 14:02:42]  Loading plugin: streamer
+[03/03/2016 14:02:42] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:02:42]   Loaded.
+[03/03/2016 14:02:42]  Loaded 2 plugins.
+
+[03/03/2016 14:02:42] 
+[03/03/2016 14:02:42] Filterscripts
+[03/03/2016 14:02:42] ---------------
+[03/03/2016 14:02:42]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:02:42]   Loaded 1 filterscripts.
+
+[03/03/2016 14:02:42]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:02:42] Gamemode
+[03/03/2016 14:02:42] ---------------
+[03/03/2016 14:02:42] Loading gamemode: grandlarc/Grandlarc:GameMode
+[03/03/2016 14:02:42] ERROR: Couldn't find class grandlarc/Grandlarc:GameMode!
+[03/03/2016 14:02:42]   Failed.
+[03/03/2016 14:02:42] 
+[03/03/2016 14:02:42] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:02:57] password = ""  (string)
+[03/03/2016 14:02:57] 
+[03/03/2016 14:02:57] Server Plugins
+[03/03/2016 14:02:57] --------------
+[03/03/2016 14:02:57]  Loading plugin: SampSharp
+[03/03/2016 14:02:57] 
+[03/03/2016 14:02:57] SampSharp Plugin
+[03/03/2016 14:02:57] ----------------
+[03/03/2016 14:02:57] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:02:57] 
+[03/03/2016 14:02:57]   Loaded.
+[03/03/2016 14:02:57]  Loading plugin: streamer
+[03/03/2016 14:02:57] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:02:57]   Loaded.
+[03/03/2016 14:02:57]  Loaded 2 plugins.
+
+[03/03/2016 14:02:57] 
+[03/03/2016 14:02:57] Filterscripts
+[03/03/2016 14:02:57] ---------------
+[03/03/2016 14:02:57]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:02:57]   Loaded 1 filterscripts.
+
+[03/03/2016 14:02:57]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:02:57] Gamemode
+[03/03/2016 14:02:57] ---------------
+[03/03/2016 14:02:57] Loading gamemode: grandlarc/Grandlarc:GameMode
+[03/03/2016 14:02:57] ERROR: library does not exist!
+[03/03/2016 14:02:57]   Failed.
+[03/03/2016 14:02:57] 
+[03/03/2016 14:02:57] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:03:05] password = ""  (string)
+[03/03/2016 14:03:05] 
+[03/03/2016 14:03:05] Server Plugins
+[03/03/2016 14:03:05] --------------
+[03/03/2016 14:03:05]  Loading plugin: SampSharp
+[03/03/2016 14:03:05] 
+[03/03/2016 14:03:05] SampSharp Plugin
+[03/03/2016 14:03:05] ----------------
+[03/03/2016 14:03:05] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:03:05] 
+[03/03/2016 14:03:05]   Loaded.
+[03/03/2016 14:03:05]  Loading plugin: streamer
+[03/03/2016 14:03:05] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:03:05]   Loaded.
+[03/03/2016 14:03:05]  Loaded 2 plugins.
+
+[03/03/2016 14:03:05] 
+[03/03/2016 14:03:05] Filterscripts
+[03/03/2016 14:03:05] ---------------
+[03/03/2016 14:03:05]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:03:05]   Loaded 1 filterscripts.
+
+[03/03/2016 14:03:05]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:03:05] Gamemode
+[03/03/2016 14:03:05] ---------------
+[03/03/2016 14:03:05] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 14:03:06]   Loaded.
+[03/03/2016 14:03:06] 
+[03/03/2016 14:03:06] Vehicles folder doesn't exists. Remember to copy this folder to insert vehicles in the gamemode!
+[03/03/2016 14:03:06] Number of vehicle models: 0
+[03/03/2016 14:03:06] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/03/2016 14:03:06] Loaded 2 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:04:01] password = ""  (string)
+[03/03/2016 14:04:01] 
+[03/03/2016 14:04:01] Server Plugins
+[03/03/2016 14:04:01] --------------
+[03/03/2016 14:04:01]  Loading plugin: SampSharp
+[03/03/2016 14:04:01] 
+[03/03/2016 14:04:01] SampSharp Plugin
+[03/03/2016 14:04:01] ----------------
+[03/03/2016 14:04:01] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:04:01] 
+[03/03/2016 14:04:01]   Loaded.
+[03/03/2016 14:04:01]  Loading plugin: streamer
+[03/03/2016 14:04:01] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:04:01]   Loaded.
+[03/03/2016 14:04:01]  Loaded 2 plugins.
+
+[03/03/2016 14:04:01] 
+[03/03/2016 14:04:01] Filterscripts
+[03/03/2016 14:04:01] ---------------
+[03/03/2016 14:04:01]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:04:01]   Loaded 1 filterscripts.
+
+[03/03/2016 14:04:01]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:04:01] Gamemode
+[03/03/2016 14:04:01] ---------------
+[03/03/2016 14:04:01] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 14:04:01]   Loaded.
+[03/03/2016 14:04:01] 
+[03/03/2016 14:04:01] Vehicles folder doesn't exists. Remember to copy this folder to insert vehicles in the gamemode!
+[03/03/2016 14:04:01] Number of vehicle models: 0
+[03/03/2016 14:04:01] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/03/2016 14:04:01] Loaded 2 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:04:16] password = ""  (string)
+[03/03/2016 14:04:16] 
+[03/03/2016 14:04:16] Server Plugins
+[03/03/2016 14:04:16] --------------
+[03/03/2016 14:04:16]  Loading plugin: SampSharp
+[03/03/2016 14:04:16] 
+[03/03/2016 14:04:16] SampSharp Plugin
+[03/03/2016 14:04:16] ----------------
+[03/03/2016 14:04:16] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:04:16] 
+[03/03/2016 14:04:16]   Loaded.
+[03/03/2016 14:04:16]  Loading plugin: streamer
+[03/03/2016 14:04:16] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:04:16]   Loaded.
+[03/03/2016 14:04:16]  Loaded 2 plugins.
+
+[03/03/2016 14:04:16] 
+[03/03/2016 14:04:16] Filterscripts
+[03/03/2016 14:04:16] ---------------
+[03/03/2016 14:04:16]   Loading filterscript 'empty.amx'...
+[03/03/2016 14:04:16]   Loaded 1 filterscripts.
+
+[03/03/2016 14:04:16]   Filterscript 'empty.amx' load failed.
+[03/03/2016 14:04:16] Gamemode
+[03/03/2016 14:04:16] ---------------
+[03/03/2016 14:04:16] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 14:04:16]   Loaded.
+[03/03/2016 14:04:16] 
+[03/03/2016 14:04:16] Vehicles folder doesn't exists. Remember to copy this folder to insert vehicles in the gamemode!
+[03/03/2016 14:04:16] Number of vehicle models: 0
+[03/03/2016 14:04:16] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/03/2016 14:04:16] Loaded 2 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:04:42] filterscripts = ""  (string)
+[14:04:42] password = ""  (string)
+[03/03/2016 14:04:42] 
+[03/03/2016 14:04:42] Server Plugins
+[03/03/2016 14:04:42] --------------
+[03/03/2016 14:04:42]  Loading plugin: SampSharp
+[03/03/2016 14:04:42] 
+[03/03/2016 14:04:42] SampSharp Plugin
+[03/03/2016 14:04:42] ----------------
+[03/03/2016 14:04:42] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:04:42] 
+[03/03/2016 14:04:42]   Loaded.
+[03/03/2016 14:04:42]  Loading plugin: streamer
+[03/03/2016 14:04:42] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:04:42]   Loaded.
+[03/03/2016 14:04:42]  Loaded 2 plugins.
+
+[03/03/2016 14:04:42] 
+[03/03/2016 14:04:42] Filterscripts
+[03/03/2016 14:04:42] ---------------
+[03/03/2016 14:04:42]   Loaded 0 filterscripts.
+
+[03/03/2016 14:04:42]   Filterscript 'empty.amx' loaded.
+[03/03/2016 14:04:42] Gamemode
+[03/03/2016 14:04:42] ---------------
+[03/03/2016 14:04:42] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 14:04:42]   Loaded.
+[03/03/2016 14:04:42] 
+[03/03/2016 14:04:42] Vehicles folder doesn't exists. Remember to copy this folder to insert vehicles in the gamemode!
+[03/03/2016 14:04:42] Number of vehicle models: 0
+[03/03/2016 14:04:42] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/03/2016 14:04:42] Loaded 2 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:04:57] filterscripts = ""  (string)
+[14:04:57] password = ""  (string)
+[03/03/2016 14:04:57] 
+[03/03/2016 14:04:57] Server Plugins
+[03/03/2016 14:04:57] --------------
+[03/03/2016 14:04:57]  Loading plugin: SampSharp
+[03/03/2016 14:04:57] 
+[03/03/2016 14:04:57] SampSharp Plugin
+[03/03/2016 14:04:57] ----------------
+[03/03/2016 14:04:57] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:04:57] 
+[03/03/2016 14:04:57]   Loaded.
+[03/03/2016 14:04:57]  Loading plugin: streamer
+[03/03/2016 14:04:57] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:04:57]   Loaded.
+[03/03/2016 14:04:57]  Loaded 2 plugins.
+
+[03/03/2016 14:04:57] 
+[03/03/2016 14:04:57] Filterscripts
+[03/03/2016 14:04:57] ---------------
+[03/03/2016 14:04:57]   Loaded 0 filterscripts.
+
+[03/03/2016 14:04:57]   Filterscript 'empty.amx' loaded.
+[03/03/2016 14:04:57] Gamemode
+[03/03/2016 14:04:57] ---------------
+[03/03/2016 14:04:57] Loading gamemode: Grandlarc:GameMode
+[03/03/2016 14:04:57]   Loaded.
+[03/03/2016 14:04:57] 
+[03/03/2016 14:04:57] Vehicles folder doesn't exists. Remember to copy this folder to insert vehicles in the gamemode!
+[03/03/2016 14:04:57] Number of vehicle models: 0
+[03/03/2016 14:04:57] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/03/2016 14:04:57] Loaded 2 commands.
+[03/03/2016 14:05:20] [connection] 192.168.1.100:59835 requests connection cookie.
+[03/03/2016 14:05:21] [connection] incoming connection: 192.168.1.100:59835 id: 0
+[03/03/2016 14:05:21] [join] Kox_Blox has joined the server (0:192.168.1.100)
+[03/03/2016 14:05:21] Kox_Blox is connected.
+[03/03/2016 14:07:14] [part] Kox_Blox has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:08:12] filterscripts = ""  (string)
+[14:08:12] password = ""  (string)
+[03/03/2016 14:08:12] 
+[03/03/2016 14:08:12] Server Plugins
+[03/03/2016 14:08:12] --------------
+[03/03/2016 14:08:12]  Loading plugin: SampSharp
+[03/03/2016 14:08:12] 
+[03/03/2016 14:08:12] SampSharp Plugin
+[03/03/2016 14:08:12] ----------------
+[03/03/2016 14:08:12] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:08:12] 
+[03/03/2016 14:08:12]   Loaded.
+[03/03/2016 14:08:12]  Loading plugin: streamer
+[03/03/2016 14:08:12] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:08:12]   Loaded.
+[03/03/2016 14:08:12]  Loaded 2 plugins.
+
+[03/03/2016 14:08:12] 
+[03/03/2016 14:08:12] Filterscripts
+[03/03/2016 14:08:12] ---------------
+[03/03/2016 14:08:12]   Loaded 0 filterscripts.
+
+[03/03/2016 14:08:12]   Filterscript 'empty.amx' loaded.
+[03/03/2016 14:08:12] Gamemode
+[03/03/2016 14:08:12] ---------------
+[03/03/2016 14:08:12] Loading gamemode: Grandlarc:grandlarc/GameMode
+[03/03/2016 14:08:12] ERROR: library does not exist!
+[03/03/2016 14:08:12]   Failed.
+[03/03/2016 14:08:12] 
+[03/03/2016 14:08:12] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:08:20] filterscripts = ""  (string)
+[14:08:20] password = ""  (string)
+[03/03/2016 14:08:20] 
+[03/03/2016 14:08:20] Server Plugins
+[03/03/2016 14:08:20] --------------
+[03/03/2016 14:08:20]  Loading plugin: SampSharp
+[03/03/2016 14:08:20] 
+[03/03/2016 14:08:20] SampSharp Plugin
+[03/03/2016 14:08:20] ----------------
+[03/03/2016 14:08:20] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:08:20] 
+[03/03/2016 14:08:20]   Loaded.
+[03/03/2016 14:08:20]  Loading plugin: streamer
+[03/03/2016 14:08:20] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:08:20]   Loaded.
+[03/03/2016 14:08:20]  Loaded 2 plugins.
+
+[03/03/2016 14:08:20] 
+[03/03/2016 14:08:20] Filterscripts
+[03/03/2016 14:08:20] ---------------
+[03/03/2016 14:08:20]   Loaded 0 filterscripts.
+
+[03/03/2016 14:08:20]   Filterscript 'empty.amx' loaded.
+[03/03/2016 14:08:20] Gamemode
+[03/03/2016 14:08:20] ---------------
+[03/03/2016 14:08:20] Loading gamemode: Grandlarc:grandlarc\GameMode
+[03/03/2016 14:08:20] ERROR: library does not exist!
+[03/03/2016 14:08:20]   Failed.
+[03/03/2016 14:08:20] 
+[03/03/2016 14:08:20] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:08:26] filterscripts = ""  (string)
+[14:08:26] password = ""  (string)
+[03/03/2016 14:08:26] 
+[03/03/2016 14:08:26] Server Plugins
+[03/03/2016 14:08:26] --------------
+[03/03/2016 14:08:26]  Loading plugin: SampSharp
+[03/03/2016 14:08:26] 
+[03/03/2016 14:08:26] SampSharp Plugin
+[03/03/2016 14:08:26] ----------------
+[03/03/2016 14:08:26] v0.6.2, (C)2014-2015 Tim Potze
+[03/03/2016 14:08:26] 
+[03/03/2016 14:08:26]   Loaded.
+[03/03/2016 14:08:26]  Loading plugin: streamer
+[03/03/2016 14:08:26] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/03/2016 14:08:26]   Loaded.
+[03/03/2016 14:08:26]  Loaded 2 plugins.
+
+[03/03/2016 14:08:26] 
+[03/03/2016 14:08:26] Filterscripts
+[03/03/2016 14:08:26] ---------------
+[03/03/2016 14:08:26]   Loaded 0 filterscripts.
+
+[03/03/2016 14:08:26]   Filterscript 'empty.amx' loaded.
+[03/03/2016 14:08:26] Gamemode
+[03/03/2016 14:08:26] ---------------
+[03/03/2016 14:08:26] Loading gamemode: grandlarc\Grandlarc:GameMode
+[03/03/2016 14:08:26] ERROR: Couldn't find class grandlarc\Grandlarc:GameMode!
+[03/03/2016 14:08:26]   Failed.
+[03/03/2016 14:08:26] 
+[03/03/2016 14:08:26] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:08:07] filterscripts = ""  (string)
+[12:08:07] password = ""  (string)
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] Server Plugins
+[27/03/2016 12:08:07] --------------
+[27/03/2016 12:08:07]  Loading plugin: SampSharp
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] SampSharp Plugin
+[27/03/2016 12:08:07] ----------------
+[27/03/2016 12:08:07] v0.6.2, (C)2014-2015 Tim Potze
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07]   Loaded.
+[27/03/2016 12:08:07]  Loading plugin: streamer
+[27/03/2016 12:08:07] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[27/03/2016 12:08:07]   Loaded.
+[27/03/2016 12:08:07]  Loaded 2 plugins.
+
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] Filterscripts
+[27/03/2016 12:08:07] ---------------
+[27/03/2016 12:08:07]   Loaded 0 filterscripts.
+
+[27/03/2016 12:08:07]   Filterscript 'empty.amx' loaded.
+[27/03/2016 12:08:07] Symbol file generation
+[27/03/2016 12:08:07] ----------------------
+[27/03/2016 12:08:07] Converting: Mrucznik.dll
+[27/03/2016 12:08:07]   Converted.
+[27/03/2016 12:08:07]  Converted 1 files.
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] Gamemode
+[27/03/2016 12:08:07] ---------------
+[27/03/2016 12:08:07] Loading gamemode: Mrucznik:GameMode
+[27/03/2016 12:08:07]   Loaded.
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] ----------------------------------
+[27/03/2016 12:08:07] M | --- Mrucznik Role Play --- | M
+[27/03/2016 12:08:07] R | ---        ****        --- | R
+[27/03/2016 12:08:07] U | ---        v3.0        --- | U
+[27/03/2016 12:08:07] C | ---        ****        --- | C
+[27/03/2016 12:08:07] Z | ---    by Mrucznik     --- | Z
+[27/03/2016 12:08:07] N | ---                    --- | N
+[27/03/2016 12:08:07] I | ---       /\_/\        --- | I
+[27/03/2016 12:08:07] K | ---   ===( *.* )===    --- | K
+[27/03/2016 12:08:07]   | ---       \_^_/        --- |  
+[27/03/2016 12:08:07] R | ---         |          --- | R
+[27/03/2016 12:08:07] P | ---         O          --- | P
+[27/03/2016 12:08:07] ----------------------------------
+[27/03/2016 12:08:07] Wersja: 3.0.0.26045
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] 
+[27/03/2016 12:08:07] Number of vehicle models: 0
+[27/03/2016 12:08:07] Detected mono version: 4.0.1 (Visual Studio built mono)
+[27/03/2016 12:08:07] Loaded 1 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:32:26] filterscripts = ""  (string)
+[11:32:26] password = ""  (string)
+[28/03/2016 11:32:26] 
+[28/03/2016 11:32:26] Server Plugins
+[28/03/2016 11:32:26] --------------
+[28/03/2016 11:32:26]  Loading plugin: SampSharp
+[28/03/2016 11:32:26] 
+[28/03/2016 11:32:26] SampSharp Plugin
+[28/03/2016 11:32:26] ----------------
+[28/03/2016 11:32:26] v0.6.2, (C)2014-2015 Tim Potze
+[28/03/2016 11:32:26] 
+[28/03/2016 11:32:26]   Loaded.
+[28/03/2016 11:32:26]  Loading plugin: streamer
+[28/03/2016 11:32:26] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[28/03/2016 11:32:26]   Loaded.
+[28/03/2016 11:32:26]  Loaded 2 plugins.
+
+[28/03/2016 11:32:26] 
+[28/03/2016 11:32:26] Filterscripts
+[28/03/2016 11:32:26] ---------------
+[28/03/2016 11:32:26]   Loaded 0 filterscripts.
+
+[28/03/2016 11:32:26]   Filterscript 'empty.amx' loaded.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:32:32] filterscripts = ""  (string)
+[11:32:32] password = ""  (string)
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] Server Plugins
+[28/03/2016 11:32:32] --------------
+[28/03/2016 11:32:32]  Loading plugin: SampSharp
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] SampSharp Plugin
+[28/03/2016 11:32:32] ----------------
+[28/03/2016 11:32:32] v0.6.2, (C)2014-2015 Tim Potze
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32]   Loaded.
+[28/03/2016 11:32:32]  Loading plugin: streamer
+[28/03/2016 11:32:32] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[28/03/2016 11:32:32]   Loaded.
+[28/03/2016 11:32:32]  Loaded 2 plugins.
+
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] Filterscripts
+[28/03/2016 11:32:32] ---------------
+[28/03/2016 11:32:32]   Loaded 0 filterscripts.
+
+[28/03/2016 11:32:32]   Filterscript 'empty.amx' loaded.
+[28/03/2016 11:32:32] Symbol file generation
+[28/03/2016 11:32:32] ----------------------
+[28/03/2016 11:32:32] Converting: Mrucznik.dll
+[28/03/2016 11:32:32]   Converted.
+[28/03/2016 11:32:32]  Converted 1 files.
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] Gamemode
+[28/03/2016 11:32:32] ---------------
+[28/03/2016 11:32:32] Loading gamemode: Mrucznik:GameMode
+[28/03/2016 11:32:32]   Loaded.
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] ----------------------------------
+[28/03/2016 11:32:32] M | --- Mrucznik Role Play --- | M
+[28/03/2016 11:32:32] R | ---        ****        --- | R
+[28/03/2016 11:32:32] U | ---        v3.0        --- | U
+[28/03/2016 11:32:32] C | ---        ****        --- | C
+[28/03/2016 11:32:32] Z | ---    by Mrucznik     --- | Z
+[28/03/2016 11:32:32] N | ---                    --- | N
+[28/03/2016 11:32:32] I | ---       /\_/\        --- | I
+[28/03/2016 11:32:32] K | ---   ===( *.* )===    --- | K
+[28/03/2016 11:32:32]   | ---       \_^_/        --- |  
+[28/03/2016 11:32:32] R | ---         |          --- | R
+[28/03/2016 11:32:32] P | ---         O          --- | P
+[28/03/2016 11:32:32] ----------------------------------
+[28/03/2016 11:32:32] Wersja: 3.0.0.26045
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] 
+[28/03/2016 11:32:32] Number of vehicle models: 0
+[28/03/2016 11:32:32] Detected mono version: 4.0.1 (Visual Studio built mono)
+[28/03/2016 11:32:32] Loaded 1 commands.
