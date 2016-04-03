@@ -192,6 +192,74 @@ namespace Mrucznik
             base.OnStreamOut(e);
         }
 
+        public override void OnClickTextDraw(ClickTextDrawEventArgs e)
+        {
+            base.OnClickTextDraw(e);
+        }
+
+        public override void OnClickPlayerTextDraw(ClickPlayerTextDrawEventArgs e)
+        {
+            base.OnClickPlayerTextDraw(e);
+        }
+
+        public override void OnCancelClickTextDraw(EventArgs e)
+        {
+            base.OnCancelClickTextDraw(e);
+        }
+
+        public override void OnSelectGlobalObject(SelectGlobalObjectEventArgs e)
+        {
+            base.OnSelectGlobalObject(e);
+        }
+
+        public override void OnSelectPlayerObject(SelectPlayerObjectEventArgs e)
+        {
+            base.OnSelectPlayerObject(e);
+        }
+
+        public override void OnEditGlobalObject(EditGlobalObjectEventArgs e)
+        {
+            base.OnEditGlobalObject(e);
+        }
+
+        public override void OnEditPlayerObject(EditPlayerObjectEventArgs e)
+        {
+            base.OnEditPlayerObject(e);
+        }
+
+        public override void OnEditAttachedObject(EditAttachedObjectEventArgs e)
+        {
+            base.OnEditAttachedObject(e);
+        }
+
+        public override void OnWeaponShot(WeaponShotEventArgs e)
+        {
+            base.OnWeaponShot(e);
+        }
+
+        public override void OnTakeDamage(DamageEventArgs e)
+        {
+            base.OnTakeDamage(e);
+        }
+
+        public override void OnGiveDamage(DamageEventArgs e)
+        {
+            base.OnGiveDamage(e);
+        }
+
+        public override void OnCleanup(DisconnectEventArgs e)
+        {
+            base.OnCleanup(e);
+
+            Console.WriteLine("OnCleanup");
+            SendInfoMessage("OnCleanup");
+        }
+
+        public override void OnCommandText(CommandTextEventArgs e)
+        {
+            base.OnCommandText(e);
+        }
+
         public override void Ban()
         {
             Delay.Run(100, base.Ban);
