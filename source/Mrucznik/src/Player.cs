@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using SampSharp.GameMode;
 using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
+using SampSharp.GameMode.Tools;
 using SampSharp.GameMode.World;
 
 namespace Mrucznik
@@ -22,16 +24,172 @@ namespace Mrucznik
             
             if (!IsNickCorrect())
             {
-                SendClientMessage(Color.White, "Nick {0} jest niepoprawny!", Name);
+                SendClientMessage("Nick {0} jest niepoprawny!", Name);
+                Kick();
                 return;
             }
+            
+            Delay.Run(100, () => //Wybierałka
+            {
+                Position = new Vector3(-2819.9297f, 1134.0607f, 26.0766f);
+                Angle = 326.0f;
+                CameraPosition = new Vector3(-2801.6691f, 1151.7545f, 31.5482f);
+                SetCameraLookAt(new Vector3(-2819.05078f, 1141.4909f, 23.3147f));
+                PlaySound(1062, new Vector3(-2818.0f, 1100.0f, 0.0f));
+            });
+        }
+
+        public override void OnDisconnected(DisconnectEventArgs e)
+        {
+            base.OnDisconnected(e);
+        }
+
+        public override void OnRequestClass(RequestClassEventArgs e)
+        {
+            base.OnRequestClass(e);
+
+            ApplyAnimation("ON_LOOKERS", "wave_loop", 3.5f, true, false, false, false, 0, false);
+            SendInfoMessage("OnRequestClass");
+        }
+
+        public override void OnRequestSpawn(RequestSpawnEventArgs e)
+        {
+            base.OnRequestSpawn(e);
+
+            SendInfoMessage("OnRequestSpawn");
         }
 
         public override void OnSpawned(SpawnEventArgs e)
         {
             base.OnSpawned(e);
 
-            SendClientMessage(Color.AliceBlue, "Elo");
+            SendInfoMessage("OnSpawned");
+        }
+
+        public override void OnUpdate(PlayerUpdateEventArgs e)
+        {
+            base.OnUpdate(e);
+        }
+
+        public override void OnText(TextEventArgs e)
+        {
+            base.OnText(e);
+        }
+
+        public override void OnStateChanged(StateEventArgs e)
+        {
+            base.OnStateChanged(e);
+
+            SendInfoMessage("OnStateChanged");
+        }
+
+        public override void OnDeath(DeathEventArgs e)
+        {
+            base.OnDeath(e);
+
+            SendInfoMessage("OnDeath");
+        }
+
+        public override void OnDialogResponse(DialogResponseEventArgs e)
+        {
+            base.OnDialogResponse(e);
+        }
+
+        public override void OnEnterVehicle(EnterVehicleEventArgs e)
+        {
+            base.OnEnterVehicle(e);
+
+            SendInfoMessage("OnEnterVehicle");
+        }
+
+        public override void OnExitVehicle(PlayerVehicleEventArgs e)
+        {
+            base.OnExitVehicle(e);
+
+            SendInfoMessage("OnExitVehicle");
+        }
+
+        public override void OnEnterCheckpoint(EventArgs e)
+        {
+            base.OnEnterCheckpoint(e);
+
+            SendInfoMessage("OnEnterCheckpoint");
+        }
+
+        public override void OnLeaveCheckpoint(EventArgs e)
+        {
+            base.OnLeaveCheckpoint(e);
+
+            SendInfoMessage("OnLeaveCheckpoint");
+        }
+
+        public override void OnEnterRaceCheckpoint(EventArgs e)
+        {
+            base.OnEnterRaceCheckpoint(e);
+
+            SendInfoMessage("OnEnterRaceCheckpoint");
+        }
+
+        public override void OnLeaveRaceCheckpoint(EventArgs e)
+        {
+            base.OnLeaveRaceCheckpoint(e);
+
+            SendInfoMessage("OnLeaveRaceCheckpoint");
+        }
+
+        public override void OnEnterExitModShop(EnterModShopEventArgs e)
+        {
+            base.OnEnterExitModShop(e);
+
+            SendInfoMessage("OnEnterExitModShop");
+        }
+
+        public override void OnSelectedMenuRow(MenuRowEventArgs e)
+        {
+            base.OnSelectedMenuRow(e);
+
+            SendInfoMessage("OnSelectedMenuRow");
+        }
+
+        public override void OnExitedMenu(EventArgs e)
+        {
+            base.OnExitedMenu(e);
+
+            SendInfoMessage("OnExitedMenu");
+        }
+
+        public override void OnClickPlayer(ClickPlayerEventArgs e)
+        {
+            base.OnClickPlayer(e);
+
+            SendInfoMessage("OnClickPlayer");
+        }
+
+        public override void OnClickMap(PositionEventArgs e)
+        {
+            base.OnClickMap(e);
+
+            SendInfoMessage("OnSpawned");
+        }
+
+        public override void OnKeyStateChanged(KeyStateChangedEventArgs e)
+        {
+            base.OnKeyStateChanged(e);
+        }
+
+        public override void OnInteriorChanged(InteriorChangedEventArgs e)
+        {
+            base.OnInteriorChanged(e);
+        }
+
+        public override void OnStreamIn(PlayerEventArgs e)
+        {
+            base.OnStreamIn(e);
+        }
+
+        public override void OnStreamOut(PlayerEventArgs e)
+        {
+            base.OnStreamOut(e);
         }
 
         public override void Ban()
@@ -44,7 +202,7 @@ namespace Mrucznik
             Delay.Run(100, base.Kick);
         }
 
-        #endregion
+        #endregion Overrided
 
         #region Utils
         private bool IsNickCorrect()
@@ -56,10 +214,10 @@ namespace Mrucznik
         {
             for (int i = 0; i < 200; i++)
             {
-                SendClientMessage(Color.Red, " ");
+                SendClientMessage(" ");
             }
         }
-        #endregion
+        #endregion Utils
 
         #region Messages
         //Error
@@ -162,7 +320,7 @@ namespace Mrucznik
             SendClientMessage(Colors.CommandInfo, string.Format(messageFormat, args));
         }
 
-        #endregion
-        
+        #endregion Messages
+
     }
 }

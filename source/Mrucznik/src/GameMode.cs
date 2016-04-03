@@ -4,6 +4,7 @@ using Mrucznik.Controllers;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Controllers;
 using SampSharp.GameMode.Definitions;
+using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.SAMP.Commands;
 using SampSharp.GameMode.World;
@@ -56,29 +57,47 @@ namespace Mrucznik
             base.OnInitialized(e);
         }
 
+        protected override void OnExited(EventArgs e)
+        {
+            base.OnExited(e);
+
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("---------- GAMEMODE OFF ----------");
+            Console.WriteLine("----------------------------------");
+        }
+
+        protected override void OnIncomingConnection(ConnectionEventArgs e)
+        {
+            base.OnIncomingConnection(e);
+        }
+
+        protected override void OnRconCommand(RconEventArgs e)
+        {
+            base.OnRconCommand(e);
+        }
+
+        protected override void OnRconLoginAttempt(RconLoginAttemptEventArgs e)
+        {
+            base.OnRconLoginAttempt(e);
+        }
+
+        protected override void OnTick(EventArgs e)
+        {
+            base.OnTick(e);
+        }
+
         protected override void LoadControllers(ControllerCollection controllers)
         {
             base.LoadControllers(controllers); //first
 
             controllers.Remove<GtaPlayerController>();
+            controllers.Remove<GtaVehicleController>();
             controllers.Add(new PlayerController());
+            controllers.Add(new VehicleController());
 
             Streamer.Load(this, controllers);
         }
-
-        #region Events (Callback's)
         
-        #endregion
-
-        #region Commands
-        [Command("kill")]
-        public static void KillMe(GtaPlayer player)
-        {
-            player.SendClientMessage(Color.AliceBlue, "%s odsluchal wazna wiadomosc.", player.Name);
-            player.Health = 0.0f;
-        }
-        #endregion
-
         #endregion
     }
 }
