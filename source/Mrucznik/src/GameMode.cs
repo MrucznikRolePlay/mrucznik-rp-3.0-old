@@ -4,6 +4,7 @@ using Mrucznik.Controllers;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Controllers;
 using SampSharp.GameMode.Definitions;
+using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.SAMP.Commands;
 using SampSharp.GameMode.World;
 using SampSharp.Streamer;
@@ -16,6 +17,7 @@ namespace Mrucznik
 
         protected override void OnInitialized(EventArgs e)
         {
+            string version = "Mrucznik - RP " + Assembly.GetExecutingAssembly().GetName().Version + " - alpha";
             Console.WriteLine("\n----------------------------------");
             Console.WriteLine("M | --- Mrucznik Role Play --- | M");
             Console.WriteLine("R | ---        ****        --- | R");
@@ -29,11 +31,10 @@ namespace Mrucznik
             Console.WriteLine("R | ---         |          --- | R");
             Console.WriteLine("P | ---         O          --- | P");
             Console.WriteLine("----------------------------------");
-            Console.WriteLine("Wersja: " + Assembly.GetExecutingAssembly().GetName().Version);
-            Console.WriteLine("\n");
+            Console.WriteLine("Wersja: {0}", version);
 
             //Ustawienia SAMP'a
-            SetGameModeText("Mrucznik-RP " + Assembly.GetExecutingAssembly().GetName().Version + "-alpha");
+            SetGameModeText(version);
             AllowInteriorWeapons(true);
             ShowPlayerMarkers(PlayerMarkersMode.Off);
             DisableInteriorEnterExits();
@@ -73,6 +74,7 @@ namespace Mrucznik
         [Command("kill")]
         public static void KillMe(GtaPlayer player)
         {
+            player.SendClientMessage(Color.AliceBlue, "%s odsluchal wazna wiadomosc.", player.Name);
             player.Health = 0.0f;
         }
         #endregion

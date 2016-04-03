@@ -17,12 +17,13 @@ namespace Mrucznik
             base.OnConnected(e);
 
             ClearChat();
-            SendClientMessage(Color.White, "SERVER: Witaj %s", Name);
-
+            SendClientMessage(Color.White, "SERVER: Witaj {0}", Name);
+            
             if (!IsNickCorrect())
             {
-                SendClientMessage(Color.White, "Nick %s jest niepoprawny!", Name);
-                Kick();
+                SendClientMessage(Color.White, "Nick {0} jest niepoprawny!", Name);
+                Delay.Run(100, Kick);
+                SendClientMessage(Color.White, "Zostałeś skickowany!", Name);
                 return;
             }
         }
@@ -38,9 +39,8 @@ namespace Mrucznik
 
         private bool IsNickCorrect()
         {
-            if(Regex.IsMatch(Name, "^[A-Z]{1}[a-z]{1,}(_[A-Z]{1}[a-z]{1,}([A-HJ-Z]{1}[a-z]{1,})?){1,2}$"))
-                return true;
-            return false;
+            string kox = Name;
+            return Regex.IsMatch(kox, "^[A-Z]{1}[a-z]{1,}(_[A-Z]{1}[a-z]{1,}([A-HJ-Z]{1}[a-z]{1,})?){1,2}$");
         }
 
         private void ClearChat()
@@ -155,5 +155,6 @@ namespace Mrucznik
         }
 
         #endregion
+        
     }
 }
