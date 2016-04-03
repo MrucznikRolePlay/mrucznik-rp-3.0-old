@@ -232,7 +232,7 @@ namespace Mrucznik
 
             if (!e.Success)
             {
-                SendFailureMessage("Zła komenda!");
+                SendCommandFeedbackMessage("Zła komenda!");
                 return;
             }
         }
@@ -295,22 +295,6 @@ namespace Mrucznik
         public virtual void SendWarningMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.Warning, string.Format(messageFormat, args));
-        }
-
-        //Failure
-        /// <summary>
-        /// Używać do komunikowania, że coś poszło nie tak, ale powinno pójść nie tak
-        /// </summary>
-        public virtual void SendFailureMessage(string message)
-        {
-            SendClientMessage(Colors.Failure, message);
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        public virtual void SendFailureMessage(string messageFormat, params object[] args)
-        {
-            SendClientMessage(Colors.Failure, string.Format(messageFormat, args));
         }
 
         //Info
