@@ -5,6 +5,7 @@ namespace Mrucznik
 {
     public struct Colors
     {
+        //Messages
         public static Color Error => CX.Color.Red.ToArgb();
         public static Color Warning => CX.Color.FromArgb(240, 144, 64).ToArgb();
         public static Color Info => CX.Color.Silver.ToArgb();

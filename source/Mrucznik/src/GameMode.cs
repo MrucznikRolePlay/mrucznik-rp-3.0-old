@@ -41,7 +41,7 @@ namespace Mrucznik
             ShowNameTags(true);
             SetNameTagDrawDistance(20.0f);
 
-            //TODO: Pogoda
+            //TODO: Pogoda - system pogody
             SetWeather(2);
             SetWorldTime(11);
 
