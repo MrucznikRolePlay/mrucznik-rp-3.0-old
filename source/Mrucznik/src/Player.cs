@@ -12,6 +12,7 @@ namespace Mrucznik
         {
         }
 
+        #region Overrided
         public override void OnConnected(EventArgs e)
         {
             base.OnConnected(e);
@@ -22,8 +23,6 @@ namespace Mrucznik
             if (!IsNickCorrect())
             {
                 SendClientMessage(Color.White, "Nick {0} jest niepoprawny!", Name);
-                Delay.Run(100, Kick);
-                SendClientMessage(Color.White, "Zostałeś skickowany!", Name);
                 return;
             }
         }
@@ -35,12 +34,22 @@ namespace Mrucznik
             SendClientMessage(Color.AliceBlue, "Elo");
         }
 
-        #region Utils
+        public override void Ban()
+        {
+            Delay.Run(100, base.Ban);
+        }
 
+        public override void Kick()
+        {
+            Delay.Run(100, base.Kick);
+        }
+
+        #endregion
+
+        #region Utils
         private bool IsNickCorrect()
         {
-            string kox = Name;
-            return Regex.IsMatch(kox, "^[A-Z]{1}[a-z]{1,}(_[A-Z]{1}[a-z]{1,}([A-HJ-Z]{1}[a-z]{1,})?){1,2}$");
+            return Regex.IsMatch(Name, "^[A-Z]{1}[a-z]{1,}(_[A-Z]{1}[a-z]{1,}([A-HJ-Z]{1}[a-z]{1,})?){1,2}$");
         }
 
         private void ClearChat()
@@ -53,7 +62,6 @@ namespace Mrucznik
         #endregion
 
         #region Messages
-
         //Error
         public virtual void SendErrorMessage(string message)
         {

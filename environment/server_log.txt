@@ -1059,3 +1059,74 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [03/04/2016 17:56:16] Number of vehicle models: 0
 [03/04/2016 17:56:16] Detected mono version: 4.0.1 (Visual Studio built mono)
 [03/04/2016 17:56:16] Loaded 1 commands.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:59:53] filterscripts = ""  (string)
+[17:59:53] password = ""  (string)
+[03/04/2016 17:59:53] 
+[03/04/2016 17:59:53] Server Plugins
+[03/04/2016 17:59:53] --------------
+[03/04/2016 17:59:53]  Loading plugin: crashdetect
+[03/04/2016 17:59:53]   CrashDetect v4.15.1 is OK.
+[03/04/2016 17:59:53]   Loaded.
+[03/04/2016 17:59:53]  Loading plugin: SampSharp
+[03/04/2016 17:59:53] 
+[03/04/2016 17:59:53] SampSharp Plugin
+[03/04/2016 17:59:53] ----------------
+[03/04/2016 17:59:53] v0.6.2, (C)2014-2015 Tim Potze
+[03/04/2016 17:59:53] 
+[03/04/2016 17:59:53]   Loaded.
+[03/04/2016 17:59:53]  Loading plugin: streamer
+[03/04/2016 17:59:53] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[03/04/2016 17:59:53]   Loaded.
+[03/04/2016 17:59:53]  Loaded 3 plugins.
+
+[03/04/2016 17:59:53] 
+[03/04/2016 17:59:53] Filterscripts
+[03/04/2016 17:59:53] ---------------
+[03/04/2016 17:59:53]   Loaded 0 filterscripts.
+
+[03/04/2016 17:59:53]   Filterscript 'empty.amx' loaded.
+[03/04/2016 17:59:53] Symbol file generation
+[03/04/2016 17:59:53] ----------------------
+[03/04/2016 17:59:53] Converting: Mrucznik.dll
+[03/04/2016 17:59:53]   Converted.
+[03/04/2016 17:59:53]  Converted 1 files.
+[03/04/2016 17:59:53] 
+[03/04/2016 17:59:53] Gamemode
+[03/04/2016 17:59:53] ---------------
+[03/04/2016 17:59:53] Loading gamemode: Mrucznik:GameMode
+[03/04/2016 17:59:53]   Loaded.
+[03/04/2016 17:59:53] 
+[03/04/2016 17:59:53] 
+[03/04/2016 17:59:53] ----------------------------------
+[03/04/2016 17:59:53] M | --- Mrucznik Role Play --- | M
+[03/04/2016 17:59:53] R | ---        ****        --- | R
+[03/04/2016 17:59:53] U | ---        v3.0        --- | U
+[03/04/2016 17:59:53] C | ---        ****        --- | C
+[03/04/2016 17:59:53] Z | ---    by Mrucznik     --- | Z
+[03/04/2016 17:59:53] N | ---                    --- | N
+[03/04/2016 17:59:53] I | ---       /\_/\        --- | I
+[03/04/2016 17:59:53] K | ---   ===( *.* )===    --- | K
+[03/04/2016 17:59:53]   | ---       \_^_/        --- |  
+[03/04/2016 17:59:53] R | ---         |          --- | R
+[03/04/2016 17:59:53] P | ---         O          --- | P
+[03/04/2016 17:59:53] ----------------------------------
+[03/04/2016 17:59:53] Wersja: Mrucznik - RP 3.0.0.32396 - alpha
+[03/04/2016 17:59:53] Number of vehicle models: 0
+[03/04/2016 17:59:53] Detected mono version: 4.0.1 (Visual Studio built mono)
+[03/04/2016 17:59:53] Loaded 1 commands.
+[03/04/2016 18:00:11] [connection] 100.82.193.125:55883 requests connection cookie.
+[03/04/2016 18:00:12] [connection] incoming connection: 100.82.193.125:55883 id: 0
+[03/04/2016 18:00:12] [join] John_MrucznIk has joined the server (0:100.82.193.125)
+[03/04/2016 18:00:13] [part] John_MrucznIk has left the server (0:2)
