@@ -55,15 +55,11 @@ namespace Mrucznik
         public override void OnRequestSpawn(RequestSpawnEventArgs e)
         {
             base.OnRequestSpawn(e);
-
-            SendInfoMessage("OnRequestSpawn");
         }
 
         public override void OnSpawned(SpawnEventArgs e)
         {
             base.OnSpawned(e);
-
-            SendInfoMessage("OnSpawned");
         }
 
         public override void OnUpdate(PlayerUpdateEventArgs e)
@@ -79,15 +75,11 @@ namespace Mrucznik
         public override void OnStateChanged(StateEventArgs e)
         {
             base.OnStateChanged(e);
-
-            SendInfoMessage("OnStateChanged");
         }
 
         public override void OnDeath(DeathEventArgs e)
         {
             base.OnDeath(e);
-
-            SendInfoMessage("OnDeath");
         }
 
         public override void OnDialogResponse(DialogResponseEventArgs e)
@@ -98,50 +90,36 @@ namespace Mrucznik
         public override void OnEnterVehicle(EnterVehicleEventArgs e)
         {
             base.OnEnterVehicle(e);
-
-            SendInfoMessage("OnEnterVehicle");
         }
 
         public override void OnExitVehicle(PlayerVehicleEventArgs e)
         {
             base.OnExitVehicle(e);
-
-            SendInfoMessage("OnExitVehicle");
         }
 
         public override void OnEnterCheckpoint(EventArgs e)
         {
             base.OnEnterCheckpoint(e);
-
-            SendInfoMessage("OnEnterCheckpoint");
         }
 
         public override void OnLeaveCheckpoint(EventArgs e)
         {
             base.OnLeaveCheckpoint(e);
-
-            SendInfoMessage("OnLeaveCheckpoint");
         }
 
         public override void OnEnterRaceCheckpoint(EventArgs e)
         {
             base.OnEnterRaceCheckpoint(e);
-
-            SendInfoMessage("OnEnterRaceCheckpoint");
         }
 
         public override void OnLeaveRaceCheckpoint(EventArgs e)
         {
             base.OnLeaveRaceCheckpoint(e);
-
-            SendInfoMessage("OnLeaveRaceCheckpoint");
         }
 
         public override void OnEnterExitModShop(EnterModShopEventArgs e)
         {
             base.OnEnterExitModShop(e);
-
-            SendInfoMessage("OnEnterExitModShop");
         }
 
         public override void OnSelectedMenuRow(MenuRowEventArgs e)
@@ -161,15 +139,11 @@ namespace Mrucznik
         public override void OnClickPlayer(ClickPlayerEventArgs e)
         {
             base.OnClickPlayer(e);
-
-            SendInfoMessage("OnClickPlayer");
         }
 
         public override void OnClickMap(PositionEventArgs e)
         {
             base.OnClickMap(e);
-
-            SendInfoMessage("OnSpawned");
         }
 
         public override void OnKeyStateChanged(KeyStateChangedEventArgs e)
@@ -250,14 +224,17 @@ namespace Mrucznik
         public override void OnCleanup(DisconnectEventArgs e)
         {
             base.OnCleanup(e);
-
-            Console.WriteLine("OnCleanup");
-            SendInfoMessage("OnCleanup");
         }
 
         public override void OnCommandText(CommandTextEventArgs e)
         {
             base.OnCommandText(e);
+
+            if (!e.Success)
+            {
+                SendFailureMessage("Zła komenda!");
+                return;
+            }
         }
 
         public override void Ban()
@@ -289,103 +266,147 @@ namespace Mrucznik
 
         #region Messages
         //Error
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual void SendErrorMessage(string message)
         {
             SendClientMessage(Colors.Error, "[ERROR] {C00010}" + message);
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual void SendErrorMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.Error, "[ERROR] {C00010} " + string.Format(messageFormat, args));
         }
 
-        //Fail
-        public virtual void SendFailureMessage(string message)
-        {
-            SendClientMessage(Colors.Failure, message);
-        }
-        public virtual void SendFailureMessage(string messageFormat, params object[] args)
-        {
-            SendClientMessage(Colors.Failure, string.Format(messageFormat, args));
-        }
-
         //Warning
+        /// <summary>
+        /// Używać do komunikowania upływu czasu, ktoś dał /q itd.
+        /// </summary>
         public virtual void SendWarningMessage(string message)
         {
             SendClientMessage(Colors.Warning, message);
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual void SendWarningMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.Warning, string.Format(messageFormat, args));
         }
 
+        //Failure
+        /// <summary>
+        /// Używać do komunikowania, że coś poszło nie tak, ale powinno pójść nie tak
+        /// </summary>
+        public virtual void SendFailureMessage(string message)
+        {
+            SendClientMessage(Colors.Failure, message);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual void SendFailureMessage(string messageFormat, params object[] args)
+        {
+            SendClientMessage(Colors.Failure, string.Format(messageFormat, args));
+        }
+
         //Info
+        /// <summary>
+        /// Używać do komunikowania informacji
+        /// </summary>
         public virtual void SendInfoMessage(string message)
         {
             SendClientMessage(Colors.Info, message);
         }
+        /// <summary>
+        /// Używać do komunikowania informacji
+        /// </summary>
         public virtual void SendInfoMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.Info, string.Format(messageFormat, args));
         }
 
         //Good info
+        /// <summary>
+        /// Używać do komunikowania pozytywnych informacji
+        /// </summary>
         public virtual void SendGoodInfoMessage(string message)
         {
             SendClientMessage(Colors.GoodInfo, message);
         }
+        /// <summary>
+        /// Używać do komunikowania pozytywnych informacji
+        /// </summary>
         public virtual void SendGoodInfoMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.GoodInfo, string.Format(messageFormat, args));
         }
 
         //Bad info
+        /// <summary>
+        /// Używać do komunikowania negatywnych informacji
+        /// </summary>
         public virtual void SendBadInfoMessage(string message)
         {
             SendClientMessage(Colors.BadInfo, message);
         }
+        /// <summary>
+        /// Używać do komunikowania negatywnych informacji
+        /// </summary>
         public virtual void SendBadInfoMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.BadInfo, string.Format(messageFormat, args));
         }
 
         //Offer
+        /// <summary>
+        /// Używać do wyświetlania ofert
+        /// </summary>
         public virtual void SendOfferMessage(string message)
         {
             SendClientMessage(Colors.Offer, message);
         }
+        /// <summary>
+        /// Używać do wyświetlania ofert
+        /// </summary>
         public virtual void SendOfferMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.Offer, string.Format(messageFormat, args));
         }
 
         //Punishment
+        /// <summary>
+        /// Używać do wyświetlania kar
+        /// </summary>
         public virtual void SendPunishmentMessage(string message)
         {
             SendClientMessage(Colors.Punishment, message);
         }
+        /// <summary>
+        /// Używać do wyświetlania kar
+        /// </summary>
         public virtual void SendPunishmentMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.Punishment, string.Format(messageFormat, args));
         }
 
         //Command help
-        public virtual void SendCommandHelpMessage(string message)
+        /// <summary>
+        /// Używać do wyświetlania wiadomości zwrotnych komendy (takie, które przerywają jej wykonanie)
+        /// </summary>
+        public virtual void SendCommandFeedbackMessage(string message)
         {
-            SendClientMessage(Colors.CommandHelp, message);
+            SendClientMessage(Colors.CommandFeedback, message);
         }
-        public virtual void SendCommandHelpMessage(string messageFormat, params object[] args)
+        /// <summary>
+        /// Używać do wyświetlania wiadomości zwrotnych komendy (takie, które przerywają jej wykonanie)
+        /// </summary>
+        public virtual void SendCommandFeedbackMessage(string messageFormat, params object[] args)
         {
-            SendClientMessage(Colors.CommandHelp, string.Format(messageFormat, args));
-        }
-
-        //Command help
-        public virtual void SendCommandInfoMessage(string message)
-        {
-            SendClientMessage(Colors.CommandInfo, message);
-        }
-        public virtual void SendCommandInfoMessage(string messageFormat, params object[] args)
-        {
-            SendClientMessage(Colors.CommandInfo, string.Format(messageFormat, args));
+            SendClientMessage(Colors.CommandFeedback, string.Format(messageFormat, args));
         }
 
         #endregion Messages
