@@ -20,12 +20,12 @@ namespace Mrucznik
             base.OnConnected(e);
 
             ClearChat();
-            SendClientMessage(Color.White, "SERVER: Witaj {0}.", Name);
+            SendClientMessage(Color.White, "SERVER: Witaj {0}", Name);
             
             if (!IsNickCorrect())
             {
-                SendClientMessage("Twój nick jest niepoprawny! Musisz posiadać nick zgodny z Listą Kar i Zasad (znajdziesz ją na naszym forum na stronie www.Mrucznik-RP.pl).");
-                SendClientMessage("Poprawny nick powinien być zgodny z formatem: Imię_Nazwisko lub Imię_Nazwisko_Nazwisko. Nazwisko może zawierać przedrostki (De, La, Di) np. John_DiCaprio.");
+                SendBadInfoMessage("Twój nick jest niepoprawny! Musisz posiadać nick zgodny z Listą Kar i Zasad (znajdziesz ją na naszym forum na stronie www.Mrucznik-RP.pl).");
+                SendBadInfoMessage("Poprawny nick powinien być zgodny z formatem: Imię_Nazwisko lub Imię_Nazwisko_Nazwisko. Nazwisko może zawierać przedrostki (De, La) np. DiCaprio");
                 Kick();
                 return;
             }
