@@ -1,7 +1,6 @@
 
 ----------
-Loaded log file: "server_log.txt".
-----------
+Loaded log file: "server_log.txt"..
 
 SA-MP Dedicated Server
 ----------------------

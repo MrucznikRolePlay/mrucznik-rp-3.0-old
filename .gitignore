@@ -292,3 +292,5 @@ source/**
 !source/Mrucznik
 source/Mrucznik/packages/**
 
+environment/server_log.txt
+environment/server_log.txt
