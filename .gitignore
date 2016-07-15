@@ -284,7 +284,6 @@ $RECYCLE.BIN/
 
 #Log files
 *.log
-*log.txt
 
 #Floder ignore
 environment/mono/**
