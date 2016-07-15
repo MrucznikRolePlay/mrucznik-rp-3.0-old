@@ -5,6 +5,10 @@ using SampSharp.GameMode;
 using SampSharp.GameMode.Controllers;
 using SampSharp.GameMode.Definitions;
 using SampSharp.GameMode.Events;
+using SampSharp.GameMode.SAMP;
+using SampSharp.GameMode.SAMP.Commands;
+using SampSharp.GameMode.World;
+
 //using SampSharp.Streamer;
 
 namespace Mrucznik
@@ -94,7 +98,21 @@ namespace Mrucznik
 
             //Streamer.Load(this, controllers);
         }
-        
+
+        #endregion
+
+        #region commands
+        [Command("veh")]
+        public static void KillMe(GtaPlayer player, VehicleModelType type, int color1=-1, int color2=-1)
+        {
+            GtaVehicle.Create(type, player.Position, color1, color2, 60);
+        }
+
+        [Command("me")]
+        public static void Me(GtaPlayer player, string[] message)
+        {
+            GtaPlayer.SendClientMessageToAll(Color.AliceBlue, message[0] + message[1]);
+        }
         #endregion
     }
 }

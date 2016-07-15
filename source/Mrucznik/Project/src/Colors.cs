@@ -15,14 +15,16 @@ namespace Mrucznik
         public static Color Offer => CX.Color.FromArgb(51, 204, 255).ToArgb();
         public static Color Punishment => CX.Color.Tomato.ToArgb();
         public static Color CommandFeedback => CX.Color.Gray.ToArgb();
+        public static Color Me => CX.Color.Purple.ToArgb();
 
-//        public static Color Error => Color.Red;
-//        public static Color Warning => Color.DarkOrange;
-//        public static Color Info => Color.Silver;
-//        public static Color GoodInfo => Color.Aquamarine;
-//        public static Color BadInfo => Color.LightCoral;
-//        public static Color Offer => new Color(51, 204, 255);
-//        public static Color Punishment => Color.Tomato;
-//        public static Color CommandFeedback => Color.Gray;
+        //        public static Color Error => Color.Red;
+        //        public static Color Warning => Color.DarkOrange;
+        //        public static Color Info => Color.Silver;
+        //        public static Color GoodInfo => Color.Aquamarine;
+        //        public static Color BadInfo => Color.LightCoral;
+        //        public static Color Offer => new Color(51, 204, 255);
+        //        public static Color Punishment => Color.Tomato;
+        //        public static Color CommandFeedback => Color.Gray;
+        //        public static Color Me => Color.Purple;
     }
 }

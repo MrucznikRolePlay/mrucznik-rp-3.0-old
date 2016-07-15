@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using SampSharp.GameMode;
+using SampSharp.GameMode.Definitions;
 using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.Tools;
@@ -150,6 +151,15 @@ namespace Mrucznik
         public override void OnKeyStateChanged(KeyStateChangedEventArgs e)
         {
             base.OnKeyStateChanged(e);
+
+            if (e.NewKeys == Keys.Yes)
+            {
+                if (State == PlayerState.Driving)
+                {
+                    Vehicle.Engine = true;
+                    Me("Odpala silnik.");
+                }
+            }
         }
 
         public override void OnInteriorChanged(InteriorChangedEventArgs e)
@@ -233,7 +243,7 @@ namespace Mrucznik
 
             if (!e.Success)
             {
-                SendCommandFeedbackMessage("Zła komenda!");
+                SendCommandFeedbackMessage("Nieprawidłowa komenda! Wpisz /komendy aby zobaczyć listę komend.");
                 return;
             }
         }
@@ -392,6 +402,17 @@ namespace Mrucznik
         public virtual void SendCommandFeedbackMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.CommandFeedback, string.Format(messageFormat, args));
+        }
+
+        //Me message
+        public virtual void Me(string message)
+        {
+            SendClientMessage(Colors.Me, "* " + Name + ": " + message);
+        }
+
+        public virtual void Me(string messageFormat, params object[] args)
+        {
+            SendClientMessage(Colors.Me, string.Format(messageFormat, args));
         }
 
         #endregion Messages

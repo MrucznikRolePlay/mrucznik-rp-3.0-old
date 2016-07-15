@@ -289,3 +289,4 @@ environment/server_log.txt
 #Floder ignore
 environment/mono/**
 source/SampSharp**
+/environment/gamemode/server_log.txt
