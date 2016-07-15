@@ -280,7 +280,7 @@ $RECYCLE.BIN/
 #*.pdb
 
 #AMX file format
-*.amx
+#*.amx
 
 #Log files
 *.log
