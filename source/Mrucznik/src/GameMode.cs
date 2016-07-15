@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Linq;
 using System.Reflection;
+using Mrucznik.Controllers;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Controllers;
 using SampSharp.GameMode.Definitions;
-using SampSharp.GameMode.SAMP.Commands;
-using SampSharp.GameMode.World;
+using SampSharp.GameMode.Events;
 using SampSharp.Streamer;
 
 namespace Mrucznik
@@ -16,6 +15,7 @@ namespace Mrucznik
 
         protected override void OnInitialized(EventArgs e)
         {
+            string version = "Mrucznik - RP " + Assembly.GetExecutingAssembly().GetName().Version + " - alpha";
             Console.WriteLine("\n----------------------------------");
             Console.WriteLine("M | --- Mrucznik Role Play --- | M");
             Console.WriteLine("R | ---        ****        --- | R");
@@ -29,11 +29,10 @@ namespace Mrucznik
             Console.WriteLine("R | ---         |          --- | R");
             Console.WriteLine("P | ---         O          --- | P");
             Console.WriteLine("----------------------------------");
-            Console.WriteLine("Wersja: " + Assembly.GetExecutingAssembly().GetName().Version);
-            Console.WriteLine("\n");
+            Console.WriteLine("Wersja: {0}", version);
 
             //Ustawienia SAMP'a
-            SetGameModeText("Mrucznik-RP " + Assembly.GetExecutingAssembly().GetName().Version);
+            SetGameModeText(version);
             AllowInteriorWeapons(true);
             ShowPlayerMarkers(PlayerMarkersMode.Off);
             DisableInteriorEnterExits();
@@ -42,7 +41,7 @@ namespace Mrucznik
             ShowNameTags(true);
             SetNameTagDrawDistance(20.0f);
 
-            //TODO: Pogoda
+            //TODO: Pogoda - system pogody
             SetWeather(2);
             SetWorldTime(11);
 
@@ -55,19 +54,47 @@ namespace Mrucznik
             base.OnInitialized(e);
         }
 
+        protected override void OnExited(EventArgs e)
+        {
+            base.OnExited(e);
+
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("---------- GAMEMODE OFF ----------");
+            Console.WriteLine("----------------------------------");
+        }
+
+        protected override void OnIncomingConnection(ConnectionEventArgs e)
+        {
+            base.OnIncomingConnection(e);
+        }
+
+        protected override void OnRconCommand(RconEventArgs e)
+        {
+            base.OnRconCommand(e);
+        }
+
+        protected override void OnRconLoginAttempt(RconLoginAttemptEventArgs e)
+        {
+            base.OnRconLoginAttempt(e);
+        }
+
+        protected override void OnTick(EventArgs e)
+        {
+            base.OnTick(e);
+        }
+
         protected override void LoadControllers(ControllerCollection controllers)
         {
             base.LoadControllers(controllers); //first
 
+            controllers.Remove<GtaPlayerController>();
+            controllers.Remove<GtaVehicleController>();
+            controllers.Add(new PlayerController());
+            controllers.Add(new VehicleController());
+
             Streamer.Load(this, controllers);
         }
-
-        [Command("kill")]
-        public static void KillMe(GtaPlayer player)
-        {
-            player.Health = 0.0f;
-        }
-
+        
         #endregion
     }
 }
