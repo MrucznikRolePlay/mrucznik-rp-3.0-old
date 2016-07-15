@@ -2686,3 +2686,78 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [03/04/2016 23:37:01] [connection] incoming connection: 100.82.153.59:58500 id: 0
 [03/04/2016 23:37:01] [join] John_MrucznikD has joined the server (0:100.82.153.59)
 [03/04/2016 23:37:02] [part] John_MrucznikD has left the server (0:2)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:41:53] filterscripts = ""  (string)
+[12:41:53] password = ""  (string)
+[15/07/2016 12:41:53] 
+[15/07/2016 12:41:53] Server Plugins
+[15/07/2016 12:41:53] --------------
+[15/07/2016 12:41:53]  Loading plugin: crashdetect
+[15/07/2016 12:41:53]   CrashDetect v4.15.1 is OK.
+[15/07/2016 12:41:53]   Loaded.
+[15/07/2016 12:41:53]  Loading plugin: SampSharp
+[15/07/2016 12:41:53] 
+[15/07/2016 12:41:53] SampSharp Plugin
+[15/07/2016 12:41:53] ----------------
+[15/07/2016 12:41:53] v0.6.2, (C)2014-2015 Tim Potze
+[15/07/2016 12:41:53] 
+[15/07/2016 12:41:53]   Loaded.
+[15/07/2016 12:41:53]  Loading plugin: streamer
+[15/07/2016 12:41:53] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[15/07/2016 12:41:53]   Loaded.
+[15/07/2016 12:41:53]  Loaded 3 plugins.
+
+[15/07/2016 12:41:53] I couldn't load any gamemode scripts. Please verify your server.cfg
+[15/07/2016 12:41:53] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[12:42:24] filterscripts = ""  (string)
+[12:42:24] password = ""  (string)
+[15/07/2016 12:42:24] 
+[15/07/2016 12:42:24] Server Plugins
+[15/07/2016 12:42:24] --------------
+[15/07/2016 12:42:24]  Loading plugin: crashdetect
+[15/07/2016 12:42:24]   CrashDetect v4.15.1 is OK.
+[15/07/2016 12:42:24]   Loaded.
+[15/07/2016 12:42:24]  Loading plugin: SampSharp
+[15/07/2016 12:42:24] 
+[15/07/2016 12:42:24] SampSharp Plugin
+[15/07/2016 12:42:24] ----------------
+[15/07/2016 12:42:24] v0.6.2, (C)2014-2015 Tim Potze
+[15/07/2016 12:42:24] 
+[15/07/2016 12:42:24]   Loaded.
+[15/07/2016 12:42:24]  Loading plugin: streamer
+[15/07/2016 12:42:24] 
+
+*** Streamer Plugin v2.7.8 by Incognito loaded ***
+
+[15/07/2016 12:42:24]   Loaded.
+[15/07/2016 12:42:24]  Loaded 3 plugins.
+
+[15/07/2016 12:42:24] 
+[15/07/2016 12:42:24] Filterscripts
+[15/07/2016 12:42:24] ---------------
+[15/07/2016 12:42:24]   Loaded 0 filterscripts.
+
+[15/07/2016 12:42:24]   Filterscript 'empty.amx' load failed.
+[15/07/2016 12:42:24] Symbol file generation
+[15/07/2016 12:42:24] ----------------------
+[15/07/2016 12:42:24] Converting: Mrucznik.dll
