@@ -289,8 +289,4 @@ environment/server_log.txt
 #Floder ignore
 environment/mono/**
 source/**
-!source/Mrucznik
-source/Mrucznik/packages/**
-
-environment/server_log.txt
-environment/server_log.txt
+source/Mrucznik/packages/SampSharp**
