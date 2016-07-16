@@ -7,6 +7,8 @@ using SampSharp.GameMode.Definitions;
 using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.SAMP.Commands;
+using SampSharp.GameMode.SAMP.Commands.Parameters;
+using SampSharp.GameMode.SAMP.Commands.ParameterTypes;
 using SampSharp.GameMode.World;
 
 //using SampSharp.Streamer;
@@ -46,11 +48,12 @@ namespace Mrucznik
             SetNameTagDrawDistance(20.0f);
 
             //TODO: Pogoda - system pogody
-            //SetWeather(2);
-            //SetWorldTime(11);
+            Server.SetCodepage("5");
+            Server.SetWeather(2);
+            Server.SetWorldTime(11);
 
             //Klasy:
-            for(int i=0; i<311; i++)
+            for (int i=0; i<311; i++)
                 AddPlayerClass(i, new Vector3(1759.0189f, -1898.1260f, 13.5622f), 266.4503f);
 
             base.OnInitialized(e);
@@ -111,7 +114,7 @@ namespace Mrucznik
         }
 
         [Command("do")]
-        public static void DoCommand(Player player, string message)
+        public static void DoCommand(Player player, [Parameter(typeof(WordType))]string message)
         {
             player.DoMessage(message);
         }
