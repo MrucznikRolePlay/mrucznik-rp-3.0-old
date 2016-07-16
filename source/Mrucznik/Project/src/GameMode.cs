@@ -109,9 +109,9 @@ namespace Mrucznik
         }
 
         [Command("me")]
-        public static void Me(GtaPlayer player, string[] message)
+        public static void Me(GtaPlayer player, string message)
         {
-            GtaPlayer.SendClientMessageToAll(Color.AliceBlue, message[0] + message[1]);
+            GtaPlayer.SendClientMessageToAll(Color.AliceBlue, message);
         }
         #endregion
     }
