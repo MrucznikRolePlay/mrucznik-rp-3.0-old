@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Display;
 using SampSharp.GameMode.Pools;
@@ -278,4 +278,3 @@ namespace Mrucznik
         Right
     }
 }
-*/

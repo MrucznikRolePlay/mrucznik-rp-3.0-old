@@ -2,7 +2,7 @@
 
 namespace Mrucznik.Controllers
 {
-    public class PlayerController : BasePlayerController
+    public class PlayerController : GtaPlayerController
     {
         public override void RegisterTypes()
         {

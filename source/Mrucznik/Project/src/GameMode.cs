@@ -46,8 +46,8 @@ namespace Mrucznik
             SetNameTagDrawDistance(20.0f);
 
             //TODO: Pogoda - system pogody
-            //SetWeather(2);
-            //SetWorldTime(11);
+            SetWeather(2);
+            SetWorldTime(11);
 
             //Klasy:
             for(int i=0; i<311; i++)
@@ -88,9 +88,11 @@ namespace Mrucznik
         protected override void LoadControllers(ControllerCollection controllers)
         {
             base.LoadControllers(controllers); //first
-            
-            controllers.Override(new PlayerController());
-            controllers.Override(new VehicleController());
+
+            controllers.Remove<GtaPlayerController>();
+            controllers.Remove<GtaVehicleController>();
+            controllers.Add(new PlayerController());
+            controllers.Add(new VehicleController());
 
             //Streamer.Load(this, controllers);
         }
@@ -99,9 +101,9 @@ namespace Mrucznik
 
         #region commands
         [Command("veh")]
-        public static void KillMe(BasePlayer player, VehicleModelType type, int color1=-1, int color2=-1)
+        public static void KillMe(GtaPlayer player, VehicleModelType type, int color1=-1, int color2=-1)
         {
-            BaseVehicle.Create(type, player.Position, color1, color2, 60);
+            GtaVehicle.Create(type, player.Position, color1, color2, 60);
         }
 
         [Command("me")]

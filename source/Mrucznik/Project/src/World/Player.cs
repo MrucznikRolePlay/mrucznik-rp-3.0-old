@@ -9,8 +9,12 @@ using SampSharp.GameMode.World;
 
 namespace Mrucznik
 {
-    public class Player : BasePlayer
+    public class Player : GtaPlayer
     {
+        public Player(int id) : base(id)
+        {
+        }
+
         #region Overrided
         public override void OnConnected(EventArgs e)
         {
