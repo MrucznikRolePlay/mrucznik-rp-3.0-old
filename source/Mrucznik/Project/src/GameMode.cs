@@ -48,7 +48,7 @@ namespace Mrucznik
             SetNameTagDrawDistance(20.0f);
 
             //TODO: Pogoda - system pogody
-            //Server.SetCodepage("cp1252");
+            Server.SetCodepage("cp1250"); //[SampSharp] WARNING: Could not open codepage file codepages/P>}.txt. Using fallback codepage cp1252.
             Server.SetWeather(2);
             Server.SetWorldTime(11);
 
