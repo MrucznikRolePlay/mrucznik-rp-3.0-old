@@ -48,7 +48,7 @@ namespace Mrucznik
             SetNameTagDrawDistance(20.0f);
 
             //TODO: Pogoda - system pogody
-            Server.SetCodepage("5");
+            //Server.SetCodepage("cp1252");
             Server.SetWeather(2);
             Server.SetWorldTime(11);
 
