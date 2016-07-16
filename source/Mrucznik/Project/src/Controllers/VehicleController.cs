@@ -3,7 +3,7 @@ using SampSharp.GameMode.World;
 
 namespace Mrucznik.Controllers
 {
-    class VehicleController : GtaVehicleController
+    class VehicleController : BaseVehicleController
     {
         public override void RegisterTypes()
         {
