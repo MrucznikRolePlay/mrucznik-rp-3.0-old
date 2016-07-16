@@ -50,9 +50,9 @@
     <Compile Include="src\Controllers\PlayerController.cs" />
     <Compile Include="src\Controllers\VehicleController.cs" />
     <Compile Include="src\GameMode.cs" />
-    <Compile Include="src\Player.cs" />
-    <Compile Include="src\ProgressBar.cs" />
-    <Compile Include="src\Vehicle.cs" />
+    <Compile Include="src\World\Player.cs" />
+    <Compile Include="src\Snippets\ProgressBar.cs" />
+    <Compile Include="src\World\Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

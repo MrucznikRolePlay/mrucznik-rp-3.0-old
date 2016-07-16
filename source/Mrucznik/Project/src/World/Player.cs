@@ -157,7 +157,7 @@ namespace Mrucznik
                 if (State == PlayerState.Driving)
                 {
                     Vehicle.Engine = true;
-                    Me("Odpala silnik.");
+                    MeMessage("Odpala silnik.");
                 }
             }
         }
@@ -405,14 +405,27 @@ namespace Mrucznik
         }
 
         //Me message
-        public virtual void Me(string message)
+        public virtual void MeMessage(string message)
         {
-            SendClientMessage(Colors.Me, "* " + Name + ": " + message);
+            SendClientMessage(Colors.Me, "* {0} {1}", Name, message);
+            SetChatBubble($"* {message} *", Colors.Me, 25.0f, 30);
         }
 
-        public virtual void Me(string messageFormat, params object[] args)
+        public virtual void MeMessage(string messageFormat, params object[] args)
         {
             SendClientMessage(Colors.Me, string.Format(messageFormat, args));
+        }
+
+        //Do message
+        public virtual void DoMessage(string message)
+        {
+            SendClientMessage(Colors.Do, "* {0} (({1}))", message, Name);
+            SetChatBubble($"** {message} **", Colors.Me, 25.0f, 30);
+        }
+
+        public virtual void DoMessage(string messageFormat, params object[] args)
+        {
+            SendClientMessage(Colors.Do, string.Format(messageFormat, args));
         }
 
         #endregion Messages

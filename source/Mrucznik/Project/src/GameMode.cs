@@ -50,10 +50,8 @@ namespace Mrucznik
             SetWorldTime(11);
 
             //Klasy:
-            AddPlayerClass(1, new Vector3(1759.0189f, -1898.1260f, 13.5622f), 266.4503f);
-            AddPlayerClass(2, new Vector3(1759.0189f, -1898.1260f, 13.5622f), 266.4503f);
-            AddPlayerClass(3, new Vector3(1759.0189f, -1898.1260f, 13.5622f), 266.4503f);
-            AddPlayerClass(4, new Vector3(1759.0189f, -1898.1260f, 13.5622f), 266.4503f);
+            for(int i=0; i<311; i++)
+                AddPlayerClass(i, new Vector3(1759.0189f, -1898.1260f, 13.5622f), 266.4503f);
 
             base.OnInitialized(e);
         }
@@ -109,9 +107,15 @@ namespace Mrucznik
         }
 
         [Command("me")]
-        public static void Me(GtaPlayer player, string message)
+        public static void MeCommand(Player player, string message)
         {
-            GtaPlayer.SendClientMessageToAll(Color.AliceBlue, message);
+            player.MeMessage(message);
+        }
+
+        [Command("do")]
+        public static void DoCommand(Player player, string message)
+        {
+            player.DoMessage(message);
         }
         #endregion
     }
