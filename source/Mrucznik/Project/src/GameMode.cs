@@ -2,6 +2,7 @@
 using System.Reflection;
 using Mrucznik.Controllers;
 using Mrucznik.World;
+using NLog;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Controllers;
 using SampSharp.GameMode.Definitions;
@@ -16,6 +17,8 @@ namespace Mrucznik
 {
     public class GameMode : BaseMode
     {
+        private static Logger logger = LogManager.GetLogger("testlog");
+
         #region Overrides of BaseMode
 
         protected override void OnInitialized(EventArgs e)
