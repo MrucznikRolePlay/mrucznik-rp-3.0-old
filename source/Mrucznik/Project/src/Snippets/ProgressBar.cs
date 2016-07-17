@@ -4,9 +4,8 @@ using SampSharp.GameMode.Display;
 using SampSharp.GameMode.Pools;
 using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.World;
-using SampSharp.GameMode.Tools;
 
-namespace Mrucznik
+namespace Mrucznik.Snippets
 {
     class ProgressBar : Pool<ProgressBar>
     {

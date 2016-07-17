@@ -4,10 +4,9 @@ using SampSharp.GameMode;
 using SampSharp.GameMode.Definitions;
 using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
-using SampSharp.GameMode.Tools;
 using SampSharp.GameMode.World;
 
-namespace Mrucznik
+namespace Mrucznik.World
 {
     public class Player : GtaPlayer
     {
