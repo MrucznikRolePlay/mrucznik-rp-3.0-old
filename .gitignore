@@ -287,6 +287,5 @@ $RECYCLE.BIN/
 environment/server_log.txt
 
 #Floder ignore
-environment/mono/**
+#environment/mono/**
 source/SampSharp**
-/environment/gamemode/server_log.txt
