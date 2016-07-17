@@ -271,6 +271,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
 # -------------------------------------------------- MOJE --------------------------------------------------
 #---< My Excludes >---
 #Server files and plugins
