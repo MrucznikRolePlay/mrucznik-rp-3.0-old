@@ -1,3 +1,0 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="../../../../../4.5/Microsoft.Portable.FSharp.Targets" />
-</Project>

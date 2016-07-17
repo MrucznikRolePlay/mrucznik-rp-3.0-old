@@ -101,23 +101,21 @@ namespace Mrucznik
 
         #region commands
         [Command("veh")]
-        public static void KillMe(GtaPlayer sender, VehicleModelType type, int color1=-1, int color2=-1)
+        public static void KillMe(GtaPlayer player, VehicleModelType type, int color1=-1, int color2=-1)
         {
-            GtaVehicle.Create(type, sender.Position, color1, color2, 60);
+            GtaVehicle.Create(type, player.Position, color1, color2, 60);
         }
 
         [Command("me")]
-        [Text("message")]
-        public static void MeCommand(Player sender, string message)
+        public static void MeCommand(Player player, string message)
         {
-            sender.MeMessage(message);
+            player.MeMessage(message);
         }
 
         [Command("do")]
-        [Text("message")]
-        public static void DoCommand(Player sender, string message)
+        public static void DoCommand(Player player, string message)
         {
-            sender.DoMessage(message);
+            player.DoMessage(message);
         }
         #endregion
     }
