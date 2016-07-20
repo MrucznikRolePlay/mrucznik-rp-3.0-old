@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 using NLog;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Definitions;
+using SampSharp.GameMode.Display;
 using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.World;
@@ -38,6 +39,18 @@ namespace Mrucznik.World
                 Kick();
                 return;
             }
+
+            Dialog d = new Dialog(DialogStyle.MessageBox, "Testowy dialog","Elo, tutaj dialog", "OK", "ANULUJ");
+            d.Show(this);
+            d.Response += delegate(object sender, DialogResponseEventArgs args)
+            {
+                if(args.DialogButton == DialogButton.Left)
+                    args.Player.SendClientMessage(Color.AliceBlue, "Siema PL");
+                else
+                {
+                    args.Player.Health = 0;
+                }
+            };
             
             Delay.Run(100, () => //Wybierałka
             {
