@@ -18,6 +18,8 @@ namespace Mrucznik.World
             get { return Score; }
             set { Score = value; }
         }
+        Dialog test = new Dialog(DialogStyle.Tablist, "Test - tablist", "Deagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Tal", "nope");
+        Dialog test2 = new Dialog(DialogStyle.TablistHeaders, "Test - tablist", "Weapon\tPrice\tAmmo\nDeagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Tak", "nope");
 
         public Player(int id) : base(id)
         {
@@ -40,15 +42,28 @@ namespace Mrucznik.World
                 return;
             }
 
-            Dialog d = new Dialog(DialogStyle.MessageBox, "Testowy dialog","Elo, tutaj dialog", "OK", "ANULUJ");
+            //testowanie dialogów
+            int loled = -2;
+            var d = new Dialog(DialogStyle.MessageBox, "Testowy dialog", "Elo, tutaj dialog", "OK", "ANULUJ");
             d.Show(this);
             d.Response += delegate(object sender, DialogResponseEventArgs args)
             {
-                if(args.DialogButton == DialogButton.Left)
-                    args.Player.SendClientMessage(Color.AliceBlue, "Siema PL");
+                if (args.DialogButton == DialogButton.Left)
+                {
+                    test.Show(this);
+                    var x = new DialogResponseEventArgs(this, 0, 1, 0, "tak");
+                    test.OnResponse(x);
+                }
                 else
                 {
+                    loled += 2;
                     args.Player.Health = 0;
+                    test2.Show(this);
+                    test2.Response += (o, eventArgs) =>
+                    {
+                        loled += 5;
+                        SendGoodInfoMessage($"{loled}");
+                    };
                 }
             };
             
