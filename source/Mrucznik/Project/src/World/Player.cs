@@ -12,7 +12,7 @@ namespace Mrucznik.World
     public class Player : GtaPlayer
     {
         private static readonly Logger ConnectLog = LogManager.GetLogger("connectlog");
-        private int Level
+        public int Level
         {
             get { return Score; }
             set { Score = value; }
