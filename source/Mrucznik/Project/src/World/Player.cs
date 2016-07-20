@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using NLog;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Definitions;
 using SampSharp.GameMode.Events;
@@ -10,6 +11,13 @@ namespace Mrucznik.World
 {
     public class Player : GtaPlayer
     {
+        private static readonly Logger ConnectLog = LogManager.GetLogger("connectlog");
+        private int Level
+        {
+            get { return Score; }
+            set { Score = value; }
+        }
+
         public Player(int id) : base(id)
         {
         }
@@ -21,7 +29,8 @@ namespace Mrucznik.World
 
             ClearChat();
             SendClientMessage(Color.White, "SERVER: Witaj {0}", Name);
-            
+            ConnectLog.Info("Gracz {0}[{1}] (IP:{2}) połączył się z serwerem.", Name, Id, IP);
+
             if (!IsNickCorrect())
             {
                 SendBadInfoMessage("Twój nick jest niepoprawny! Musisz posiadać nick zgodny z Listą Kar i Zasad (znajdziesz ją na naszym forum na stronie www.Mrucznik-RP.pl).");
@@ -43,6 +52,8 @@ namespace Mrucznik.World
         public override void OnDisconnected(DisconnectEventArgs e)
         {
             base.OnDisconnected(e);
+
+            ConnectLog.Info("Gracz {0}[{1}] wyszedł z serwera.", Name, Id);
         }
 
         public override void OnRequestClass(RequestClassEventArgs e)
