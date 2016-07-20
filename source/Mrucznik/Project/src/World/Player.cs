@@ -167,7 +167,7 @@ namespace Mrucznik.World
                 if (State == PlayerState.Driving)
                 {
                     Vehicle.Engine = true;
-                    MeMessage("Odpala silnik.");
+                    MeMessage("odpala silnik.");
                 }
             }
         }

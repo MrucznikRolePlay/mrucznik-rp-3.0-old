@@ -111,12 +111,14 @@ namespace Mrucznik
         }
 
         [Command("me")]
+        [Text("message")]
         public static void MeCommand(Player player, string message)
         {
             player.MeMessage(message);
         }
 
         [Command("do")]
+        [Text("message")]
         public static void DoCommand(Player player, string message)
         {
             player.DoMessage(message);
