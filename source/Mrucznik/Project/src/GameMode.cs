@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Mrucznik.Controllers;
 using Mrucznik.Items;
@@ -26,7 +27,7 @@ namespace Mrucznik
         
         private static GlobalObject dynamicObject;
         private static TextLabel dynamicTextLabel;
-        private static Item item;
+        private static List<Item> items = new List<Item>();
 
         #region Overrides of BaseMode
 
@@ -148,17 +149,26 @@ namespace Mrucznik
             dynamicTextLabel = new TextLabel(text, Color.Peru, player.Position, 25.0f, 0, false);
         }
 
-        [Command("gunitem")]
+        [Command("gun")]
         public static void GunItemCommand(Player player, Weapon weapon)
         {
-            item = new GunItem(weapon, 100) {Position = player.Position};
+            items.Add(new GunItem(weapon, 100, player.Position, player.Rotation));
         }
 
-        [Command("movegunitem")]
+        [Command("hajs")]
+        public static void MoneyItemCommand(Player player, Weapon weapon)
+        {
+            items.Add(new MoneyItem(100, player.Position));
+        }
+
+        [Command("tome")]
         public static void MoveGunItemCommand(Player player)
         {
-            if(item != null)
+            foreach (var item in items)
+            {
                 item.Position = player.Position;
+                item.Rotation = player.Position;
+            }
         }
         #endregion
     }

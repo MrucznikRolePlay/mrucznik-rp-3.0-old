@@ -104,7 +104,7 @@ namespace Mrucznik
         private readonly float _drawDistance;
 
         //Constructors
-        public TextLabelExposion(string text, Color color, Vector3 position = default(Vector3), float drawDistance = 200.0f,
+        public TextLabelExposion(string text, Color color, Vector3 position, float drawDistance = 200.0f,
             bool testLOS = false)
         {
             _textLabel = new TextLabel(text, color, position, drawDistance, 0, testLOS);
@@ -130,19 +130,24 @@ namespace Mrucznik
 
     class PickupExposion : IObserver
     {
-        public void Expose()
-        {
-            throw new NotImplementedException();
-        }
+        private Pickup _pickup;
 
-        public void UnExpose()
+        public PickupExposion(int model, int type, Vector3 position)
         {
-            throw new NotImplementedException();
+            _pickup = Pickup.Create(model, type, position);
+
         }
 
         public void Update(IObservable sender)
         {
-            throw new NotImplementedException();
+            //TODO: DynamicPickup
+            var item = sender as Item;
+            if (item != null)
+            {
+                int model = _pickup.Model, type = _pickup.SpawnType;
+                _pickup.Dispose();
+                _pickup = Pickup.Create(model, type, item.Position);
+            }
         }
     }
 

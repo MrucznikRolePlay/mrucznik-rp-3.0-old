@@ -74,13 +74,13 @@ namespace Mrucznik.Items
         private int ammo;
 
         //--- Constructors ---
-        public GunItem(Weapon gun, int ammo = 0)
+        public GunItem(Weapon gun, int ammo, Vector3 position, Vector3 rotation)
         {
             this.gun = gun;
             this.ammo = ammo;
             Name = gun.ToString();
-            AddListener(new ObjectExposion(356, Position, Rotation));
-            AddListener(new TextLabelExposion(gun.ToString(), Color.Red));
+            AddListener(new ObjectExposion(356, position, rotation));
+            AddListener(new TextLabelExposion(gun.ToString(), Color.Red, position));
         }
 
         //--- Methods ---
@@ -90,10 +90,10 @@ namespace Mrucznik.Items
     {
         private int ammount;
 
-        public MoneyItem(int ammount)
+        public MoneyItem(int ammount, Vector3 position)
         {
             this.ammount = ammount;
-            Observers.Add(new PickupExposion());
+            Observers.Add(new PickupExposion(1212, 2, position));
         }
     }
 }
