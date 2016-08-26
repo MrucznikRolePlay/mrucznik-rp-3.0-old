@@ -35,8 +35,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="SampSharp.GameMode, Version=0.6.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SampSharp.GameMode.0.6.2.0\lib\net45\SampSharp.GameMode.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SampSharp\bin\SampSharp.GameMode.dll</HintPath>
+    </Reference>
+    <Reference Include="SampSharp.Streamer, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SampSharp-streamer\src\SampSharp.Streamer\obj\Debug\SampSharp.Streamer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +58,8 @@
     <Compile Include="src\Controllers\PlayerController.cs" />
     <Compile Include="src\Controllers\VehicleController.cs" />
     <Compile Include="src\GameMode.cs" />
+    <Compile Include="src\IObserver.cs" />
+    <Compile Include="src\World\Items\Item.cs" />
     <Compile Include="src\World\Player.cs" />
     <Compile Include="src\Snippets\ProgressBar.cs" />
     <Compile Include="src\World\Vehicle.cs" />
@@ -61,13 +67,19 @@
   <ItemGroup>
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="src\World\Businesses\" />
+    <Folder Include="src\World\Fractions\" />
+    <Folder Include="src\World\Jobs\" />
+    <Folder Include="src\World\Organizations\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

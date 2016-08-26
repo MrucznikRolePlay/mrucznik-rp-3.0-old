@@ -3,27 +3,16 @@ using System.Text.RegularExpressions;
 using NLog;
 using SampSharp.GameMode;
 using SampSharp.GameMode.Definitions;
-using SampSharp.GameMode.Display;
 using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.World;
 
 namespace Mrucznik.World
 {
-    public class Player : GtaPlayer
+    public class Player : BasePlayer
     {
         private static readonly Logger ConnectLog = LogManager.GetLogger("connectlog");
-        public int Level
-        {
-            get { return Score; }
-            set { Score = value; }
-        }
-        Dialog test = new Dialog(DialogStyle.Tablist, "Test - tablist", "Deagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Tal", "nope");
-        Dialog test2 = new Dialog(DialogStyle.TablistHeaders, "Test - tablist", "Weapon\tPrice\tAmmo\nDeagle\t$5000\t100\nSawnoff\t$5000\t100\nPistol\t$1000\t50", "Tak", "nope");
-
-        public Player(int id) : base(id)
-        {
-        }
+        public bool Zalogowany { get; set; } = false;
 
         #region Overrided
         public override void OnConnected(EventArgs e)
@@ -32,40 +21,13 @@ namespace Mrucznik.World
 
             ClearChat();
             SendClientMessage(Color.White, "SERVER: Witaj {0}", Name);
-            ConnectLog.Info("Gracz {0}[{1}] (IP:{2}) połączył się z serwerem.", Name, Id, IP);
+            ConnectLog.Info($"Gracz {Name}[{Id}] (IP:{IP}) połączył się z serwerem.");
 
             if (!IsNickCorrect())
             {
-                SendBadInfoMessage("Twój nick jest niepoprawny! Musisz posiadać nick zgodny z Listą Kar i Zasad (znajdziesz ją na naszym forum na stronie www.Mrucznik-RP.pl).");
-                SendBadInfoMessage("Poprawny nick powinien być zgodny z formatem: Imię_Nazwisko lub Imię_Nazwisko_Nazwisko. Nazwisko może zawierać przedrostki (De, La) np. DiCaprio");
-                Kick();
+                Kick("Twój nick jest niepoprawny! Musisz posiadać nick zgodny z Listą Kar i Zasad (znajdziesz ją na naszym forum na stronie www.Mrucznik-RP.pl).\nPoprawny nick powinien być zgodny z formatem: Imię_Nazwisko lub Imię_Nazwisko_Nazwisko. Nazwisko może zawierać przedrostki (De, La) np. DiCaprio");
                 return;
             }
-
-            //testowanie dialogów
-            int loled = -2;
-            var d = new Dialog(DialogStyle.MessageBox, "Testowy dialog", "Elo, tutaj dialog", "OK", "ANULUJ");
-            d.Show(this);
-            d.Response += delegate(object sender, DialogResponseEventArgs args)
-            {
-                if (args.DialogButton == DialogButton.Left)
-                {
-                    test.Show(this);
-                    var x = new DialogResponseEventArgs(this, 0, 1, 0, "tak");
-                    test.OnResponse(x);
-                }
-                else
-                {
-                    loled += 2;
-                    args.Player.Health = 0;
-                    test2.Show(this);
-                    test2.Response += (o, eventArgs) =>
-                    {
-                        loled += 5;
-                        SendGoodInfoMessage($"{loled}");
-                    };
-                }
-            };
             
             Delay.Run(100, () => //Wybierałka
             {
@@ -74,6 +36,7 @@ namespace Mrucznik.World
                 CameraPosition = new Vector3(-2801.6691f, 1151.7545f, 31.5482f);
                 SetCameraLookAt(new Vector3(-2819.05078f, 1141.4909f, 23.3147f));
                 PlaySound(1062, new Vector3(-2818.0f, 1100.0f, 0.0f));
+                ApplyAnimation("ON_LOOKERS", "wave_loop", 3.5f, true, false, false, false, 0, false);
             });
         }
 
@@ -81,7 +44,7 @@ namespace Mrucznik.World
         {
             base.OnDisconnected(e);
 
-            ConnectLog.Info("Gracz {0}[{1}] wyszedł z serwera.", Name, Id);
+            ConnectLog.Info($"Gracz {Name}[{Id}] wyszedł z serwera, powód: {e.Reason}.");
         }
 
         public override void OnRequestClass(RequestClassEventArgs e)
@@ -310,6 +273,12 @@ namespace Mrucznik.World
             {
                 SendClientMessage(" ");
             }
+        }
+
+        public void Kick(string reason)
+        {
+            SendPunishmentMessage(reason);
+            Kick();
         }
         #endregion Utils
 

@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Reflection;
 using Mrucznik.Controllers;
+using Mrucznik.Items;
 using Mrucznik.World;
 using NLog;
 using SampSharp.GameMode;
+using SampSharp.GameMode.API;
 using SampSharp.GameMode.Controllers;
 using SampSharp.GameMode.Definitions;
 using SampSharp.GameMode.Events;
 using SampSharp.GameMode.SAMP;
 using SampSharp.GameMode.SAMP.Commands;
 using SampSharp.GameMode.World;
+using SampSharp.Streamer;
+using SampSharp.Streamer.Definitions;
+using SampSharp.Streamer.World;
 
 //using SampSharp.Streamer;
 
@@ -18,6 +23,10 @@ namespace Mrucznik
     public class GameMode : BaseMode
     {
         private static Logger logger = LogManager.GetLogger("testlog");
+        
+        private static GlobalObject dynamicObject;
+        private static TextLabel dynamicTextLabel;
+        private static Item item;
 
         #region Overrides of BaseMode
 
@@ -49,9 +58,9 @@ namespace Mrucznik
             ShowNameTags(true);
             SetNameTagDrawDistance(20.0f);
 
-            //TODO: Pogoda - system pogody
-            SetWeather(2);
-            SetWorldTime(11);
+            //TODO: Pogoda - system pogody (http://wiki.sa-mp.com/wiki/TogglePlayerClock - ToggleClock(true);)
+            Server.SetWeather(2);
+            Server.SetWorldTime(11);
 
             //Klasy:
             for(int i=0; i<311; i++)
@@ -93,35 +102,63 @@ namespace Mrucznik
         {
             base.LoadControllers(controllers); //first
 
-            controllers.Remove<GtaPlayerController>();
-            controllers.Remove<GtaVehicleController>();
-            controllers.Add(new PlayerController());
-            controllers.Add(new VehicleController());
-
+            controllers.Override(new PlayerController());
+            controllers.Override(new VehicleController());
+            
             //Streamer.Load(this, controllers);
         }
 
         #endregion
 
         #region commands
-        [Command("veh")]
-        public static void KillMe(GtaPlayer player, VehicleModelType type, int color1=-1, int color2=-1)
+        [Command("vehicle", "veh", Shortcut = "v", DisplayName = "vehicle")]
+        public static void VehicleCommand(Player player, VehicleModelType model, int color1=-1, int color2=-1)
         {
-            GtaVehicle.Create(type, player.Position, color1, color2, 60);
+            BaseVehicle.Create(model, player.Position, color1, color2, 60);
+        }
+        [Command("vehicle", "veh", Shortcut = "v", DisplayName = "vehicle")]
+        public static void VehicleCommand(Player player, int model, int color1 = -1, int color2 = -1)
+        {
+            BaseVehicle.Create((VehicleModelType)model, player.Position, color1, color2, 60);
         }
 
         [Command("me")]
-        [Text("message")]
         public static void MeCommand(Player player, string message)
         {
             player.MeMessage(message);
         }
 
         [Command("do")]
-        [Text("message")]
         public static void DoCommand(Player player, string message)
         {
             player.DoMessage(message);
+        }
+
+        [Command("object")]
+        public static void ObjectCommand(Player player, int model)
+        {
+            player.SendInfoMessage($"Stworzono obiekt o modelu {model}");
+            dynamicObject = new GlobalObject(model, player.Position, player.Rotation);
+        }
+
+        [Command("label")]
+        public static void LabelCommand(Player player, string text)
+        {
+            player.SendInfoMessage($"Stworzono 3DText o zawartości {text}");
+            dynamicTextLabel = new TextLabel(text, Color.Peru, player.Position, 25.0f, 0, false);
+        }
+
+        [Command("gunitem")]
+        public static void GunItemCommand(Player player, Weapon weapon)
+        {
+            item = new GunItem(weapon, 100) {Position = player.Position};
+        }
+
+        [Command("movegunitem")]
+        public static void MoveGunItemCommand(Player player)
+        {
+            if(item != null)
+                item.Position = player.Position;
         }
         #endregion
     }

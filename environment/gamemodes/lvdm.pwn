@@ -85,6 +85,9 @@ main()
 		print("         Coded By");
 		print("            Jax");
 		print("----------------------------------\n");
+		
+		
+		print("LOLOL\n");
 }
 
 public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)

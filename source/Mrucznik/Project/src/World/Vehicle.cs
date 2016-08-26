@@ -4,12 +4,8 @@ using SampSharp.GameMode.World;
 
 namespace Mrucznik.World
 {
-    class Vehicle : GtaVehicle
+    class Vehicle : BaseVehicle
     {
-        public Vehicle(int id) : base(id)
-        {
-        }
-
         #region Overrided
 
         public override void OnDeath(PlayerEventArgs e)

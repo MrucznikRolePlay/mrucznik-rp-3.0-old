@@ -6,7 +6,7 @@ namespace Mrucznik
     public struct Colors
     {
         //Messages
-        //Jeśli kolory nie działają - zamień na poniższe (forma kolorów zmieniona tylko dla wyświetlania ich poprawnie przez IDE)
+        //Jeśli kolory nie działają - zamień te bez ToArgb() (forma kolorów zmieniona tylko dla wyświetlania ich poprawnie przez IDE)
 //        public static Color Error => CX.Color.Red.ToArgb();
 //        public static Color Warning => CX.Color.DarkOrange.ToArgb();
 //        public static Color Info => CX.Color.Silver.ToArgb();

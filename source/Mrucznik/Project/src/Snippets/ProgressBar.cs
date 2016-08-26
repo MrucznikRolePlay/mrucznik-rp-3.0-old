@@ -15,7 +15,7 @@ namespace Mrucznik.Snippets
         private float _value;
         private float _max;
 
-        public ProgressBar(GtaPlayer player, float x, float y, float value, Color color = default(Color),
+        public ProgressBar(BasePlayer player, float x, float y, float value, Color color = default(Color),
             float width = 55.5f, float height = 3.2f,
             float max = 100.0f, ProgressBarDirection direction = ProgressBarDirection.Right)
         {
@@ -38,8 +38,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x + width - 4.0f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = height / 10,
+                        LetterSize = new Vector2(1.0f, height / 10),
                         BoxColor = 0x00000000 | (color & 0x000000FF)
                     };
 
@@ -48,8 +47,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x + width - 5.5f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = height / 10 - 0.35f,
+                        LetterSize = new Vector2(1.0f, height / 10 - 0.35f),
                         BoxColor = (int)((color & 0xFFFFFF00) | (0x66 & ((color & 0x000000FF) / 2)))
                     };
 
@@ -58,8 +56,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = CalculatePercentage(),
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = height / 10 - 0.35f,
+                        LetterSize = new Vector2(1.0f, height / 10 - 0.35f),
                         BoxColor = color
                     };
                     break;
@@ -69,8 +66,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 4.0f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = height / 10,
+                        LetterSize = new Vector2(1.0f, height / 10),
                         BoxColor = 0x00000000 | (color & 0x000000FF)
                     };
 
@@ -79,8 +75,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 2.5f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = height / 10 - 0.35f,
+                        LetterSize = new Vector2(1.0f, height / 10 - 0.35f),
                         BoxColor = (int)((color & 0xFFFFFF00) | (0x66 & ((color & 0x000000FF) / 2)))
                     };
 
@@ -89,8 +84,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = CalculatePercentage(),
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = height / 10 - 0.35f,
+                        LetterSize = new Vector2(1.0f, height / 10 - 0.35f),
                         BoxColor = color
                     };
                     break;
@@ -100,8 +94,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 4.0f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = -((height / 10) * 1.02f) - 0.35f,
+                        LetterSize = new Vector2(1.0f, -((height / 10) * 1.02f) - 0.35f),
                         BoxColor = 0x00000000 | (color & 0x000000FF)
                     };
 
@@ -110,8 +103,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 2.5f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = -(height / 10.0f) * 1.02f,
+                        LetterSize = new Vector2(1.0f, -(height / 10.0f) * 1.02f),
                         BoxColor = (int)((color & 0xFFFFFF00) | (0x66 & ((color & 0x000000FF) / 2)))
                     };
 
@@ -120,8 +112,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 2.5f,
                         Height = 0.0f,
-                        LetterWidth = 0.0f,
-                        LetterHeight = CalculatePercentage(),
+                        LetterSize = new Vector2(0.0f, CalculatePercentage()),
                         BoxColor = color
                     };
                     break;
@@ -132,8 +123,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 4.0f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = (height / 10) - 0.35f,
+                        LetterSize = new Vector2(1.0f, (height / 10) - 0.35f),
                         BoxColor = 0x00000000 | (color & 0x000000FF)
                     };
 
@@ -142,8 +132,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 2.5f,
                         Height = 0.0f,
-                        LetterWidth = 1.0f,
-                        LetterHeight = (height / 10.0f) - 0.55f,
+                        LetterSize = new Vector2(1.0f, (height / 10.0f) - 0.55f),
                         BoxColor = (int)((color & 0xFFFFFF00) | (0x66 & ((color & 0x000000FF) / 2)))
                     };
 
@@ -152,8 +141,7 @@ namespace Mrucznik.Snippets
                         UseBox = true,
                         Width = x - width - 2.5f,
                         Height = 0.0f,
-                        LetterWidth = 0.0f,
-                        LetterHeight = CalculatePercentage(),
+                        LetterSize = new Vector2(0.0f, CalculatePercentage()),
                         BoxColor = color
                     };
                     break;
@@ -229,7 +217,7 @@ namespace Mrucznik.Snippets
                 case ProgressBarDirection.Up:
                 case ProgressBarDirection.Down:
                     {
-                        _main.LetterHeight = CalculatePercentage();
+                        _main.LetterSize = new Vector2(_main.LetterSize.X, CalculatePercentage());
                     }
                     break;
             }
